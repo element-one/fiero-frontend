@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       className={twMerge(
         clsx(
-          'flex h-fit w-fit items-center justify-center rounded-full font-poppins text-xs font-semibold transition-all',
+          'flex h-fit w-fit items-center font-typewriter text-text-white justify-center rounded-[10px] text-xs font-semibold transition-all',
           'disabled:cursor-not-allowed disabled:opacity-50',
           size === 'large' && 'px-[16px] py-[12px] text-cta1',
           size === 'small' && 'px-2 py-2',

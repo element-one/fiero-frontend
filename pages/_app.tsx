@@ -2,6 +2,7 @@ import React from 'react'
 import { toast, ToastContainer } from 'react-toastify'
 import type { AppProps } from 'next/app'
 import { Poppins } from 'next/font/google'
+import localFont from 'next/font/local'
 import Head from 'next/head'
 import { GoogleAnalytics } from 'nextjs-google-analytics'
 
@@ -20,6 +21,23 @@ import '@styles/globals.css'
 import '@styles/signup-carousel.css'
 import 'react-toastify/dist/ReactToastify.css'
 import 'cropperjs/dist/cropper.css'
+
+const typewriter = localFont({
+  src: [
+    {
+      path: './fonts/american-typewriter.ttf',
+    },
+  ],
+  variable: '--font-typewriter',
+})
+
+const knockout = localFont({
+  src: [
+    {
+      path: './fonts/Knockout.otf',
+    }
+  ]
+})
 
 const poppins = Poppins({
   weight: ['700', '500', '400'],
@@ -41,7 +59,7 @@ const MyApp: React.FC<AppProps> = ({
     <QueryClientProvider client={queryClient}>
       <Hydrate state={pageProps.dehydratedState}>
         <Head>
-          <title>Harpoon</title>
+          <title>Fiero</title>
           <link rel='icon' type='image/x-icon' href='/favicon.ico' />
           <link
             rel='icon'
@@ -60,7 +78,13 @@ const MyApp: React.FC<AppProps> = ({
             content='width=device-width, initial-scale=1.0'
           />
         </Head>
-        <main className={`${poppins.variable}`}></main>
+        <style jsx global>{`
+          :root {
+            --font-typewriter: ${typewriter.style.fontFamily};
+            --font-knockout: ${knockout.style.fontFamily};
+          }
+        `}</style>
+        <main className={`${poppins.variable} ${typewriter.variable}`}></main>
         <AuthProvider>
           <ModalProvider>
             <GoogleAnalytics trackPageViews />

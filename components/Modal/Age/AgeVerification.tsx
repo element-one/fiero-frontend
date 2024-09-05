@@ -71,7 +71,7 @@ export const AgeVerificationModal: React.FC<AgeVerificationModalProps> = ({
                 ></Image>
                 <div className='mb-[50px] mt-4 flex flex-col items-center justify-center'>
                   <div className='mt-4 flex flex-col items-center'>
-                    <span className='whitespace-nowrap text-[30px] font-[800] uppercase text-text-black'>
+                    <span className='whitespace-nowrap font-typewriter text-[30px] font-[800] uppercase text-text-black'>
                       Are you 21 or older?
                     </span>
                   </div>

@@ -69,10 +69,10 @@ export const PinForm: React.FC<PinFormProps> = ({ email, onBack }) => {
     <div className='flex h-full max-w-[500px] flex-col items-center justify-start bg-bg-white p-6 md:min-w-[460px] md:justify-center'>
       <div className='relative h-full w-full md:h-fit md:w-fit md:min-w-[360px]'>
         <div className='mt-2 w-full pt-[70px]'>
-          <div className='text-center text-[30px] font-[800] text-text-black'>
+          <div className='text-center text-[30px] font-knockout font-semibold text-text-black'>
             Enter Code
           </div>
-          <p className='w-full text-center text-[16px] font-medium text-text-black opacity-60'>
+          <p className='w-full text-center mt-2 text-[16px] font-typewriter font-medium text-text-black opacity-60'>
             Enter the 4-digit passcode sent to
             <br />
             {email ?? 'name@email.com'}
@@ -135,7 +135,7 @@ export const PinForm: React.FC<PinFormProps> = ({ email, onBack }) => {
           />
         </div>
         {showError && (
-          <div className='mt-2 cursor-pointer text-center text-[14px] text-text-orange'>
+          <div className='mt-2 cursor-pointer font-typewriter text-center text-[14px] text-text-orange'>
             Invalid code. Please try again
           </div>
         )}
@@ -147,7 +147,7 @@ export const PinForm: React.FC<PinFormProps> = ({ email, onBack }) => {
           >
             Continue
           </Button>
-          <p className='mt-6 flex h-6 flex-col justify-center text-center text-[14px] leading-[150%]'>
+          <p className='mt-6 flex h-6 flex-col font-typewriter justify-center text-center text-[14px] leading-[150%]'>
             {count > 0 && <span>Resend after {count} seconds</span>}
             {count <= 0 && (
               <span

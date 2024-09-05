@@ -45,15 +45,15 @@ const NavButton: React.FC<NavButtonProps> = ({
         className={clsx(
           'ml-16 flex w-full flex-row items-center justify-start space-x-2 text-b1 hover:text-text-primary md:ml-0 md:mt-0',
           isSelected && 'text-text-primary',
-          isDisabled && 'text-neutral-600'
+          isDisabled && 'text-text-black'
         )}
       >
         {icon}
         <span
           className={clsx(
             isSelected && 'text-text-primary',
-            isDisabled && 'text-neutral-600',
-            'font-[500] uppercase md:text-[14px]'
+            isDisabled && 'text-text-black',
+            'font-[600] md:text-[14px]'
           )}
         >
           {children}

@@ -89,13 +89,14 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSuccess }) => {
   return (
     <div className='flex h-full max-w-[500px] overflow-hidden flex-col items-center justify-center bg-bg-white p-6 text-text-black md:min-w-[460px]'>
       <Image
-        src='/svg/harpoon_logo.svg'
-        alt='harpoon'
-        width={260}
-        height={136}
+        src='/png/fiero_logo.png'
+        alt='fiero logo'
+        width={180}
+        height={94}
+        className='rounded-none'
       />
-      <div className='mb-12 mt-2 text-center text-[30px] font-semibold'>
-        Create an account
+      <div className='my-6 uppercase font-knockout text-center text-[30px] font-semibold'>
+        Sign up or log in
       </div>
 
       {errorMessage && (
@@ -106,7 +107,7 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSuccess }) => {
 
       <form onSubmit={handleSubmit} className='flex w-full flex-col shrink-0'>
         <button
-          className='mt-[16px] flex h-[48px] w-full cursor-pointer items-center justify-center rounded-full border border-solid border-[#A2A2A2] font-semibold'
+          className='mt-[16px] flex h-[48px] w-full cursor-pointer items-center justify-center rounded-[10px] border border-solid border-[#A2A2A2] font-semibold'
           onClick={handleGoogleLogin}
         >
           <img
@@ -114,7 +115,7 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSuccess }) => {
             alt='google login'
             className='h-[23px]'
           />
-          <p className='ml-[24px] text-lg'>Continue with Google</p>
+          <p className='ml-[8px] text-lg font-typewriter'>Continue with Google</p>
         </button>
 
 
@@ -124,8 +125,8 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSuccess }) => {
           <div className='h-0 flex-grow border-[0.5px] border-solid border-border-2'></div>
         </div>
 
-        <div className=''>
-          <label className='text-b1'>Your email</label>
+        <div className='font-typewriter'>
+          <label className='text-b1 font-semibold'>Your email</label>
           <input
             type='email'
             name='email'
@@ -133,16 +134,16 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSuccess }) => {
             onChange={handleChange}
             id='email'
             placeholder='name@example.com'
-            className='mt-[8px] flex h-[52px] w-full rounded-full border border-solid border-border-1 bg-bg-white px-[16px] placeholder:opacity-40'
+            className='mt-[8px] flex h-[52px] w-full rounded-[10px] border border-solid border-border-1 bg-bg-white px-[16px]'
           />
         </div>
         <div className='mb-[16px] mt-[33px] w-full'>
           <Button
-            className='h-[52px] w-full text-[16px]'
+            className='h-[52px] w-full text-[16px] font-semibold'
             type='submit'
             isLoading={isLoading}
           >
-            Sign Up
+            Sign Up or Log In
           </Button>
         </div>
       </form>

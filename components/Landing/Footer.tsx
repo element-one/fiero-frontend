@@ -7,8 +7,8 @@ const LandingFooter = () => {
   return (
     <div className='flex w-full flex-col flex-wrap items-center'>
       <Image
-        src={'/png/harpoon_logo.png'}
-        alt='drumbeat logo'
+        src={'/png/fiero_logo.png'}
+        alt='fiero logo'
         width={96}
         className='mt-20 md:mt-32'
       />

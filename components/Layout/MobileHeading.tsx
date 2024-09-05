@@ -34,15 +34,15 @@ const MobileHeading: React.FC<MobileHeadingProps> = ({ }) => {
       </div>
 
       <Image
-        src='/svg/harpoon_logo.svg'
-        alt='harpoon'
-        width={94}
-        height={49}
-        className='z-[1]'
+        src='/png/fiero_logo.png'
+        alt='fiero logo'
+        width={64}
+        height={34}
+        className='z-[1] rounded-none'
       />
 
       {!isUserLoading && user ? (
-        <div className='flex flex-row items-center gap-2 relative'>
+        <div className='flex font-typewriter flex-row items-center gap-2 relative'>
           <div className='flex flex-col items-center justify-center text-text-primary text-[12px] absolute left-[-40px]'>
             <div className='h-[14px] leading-[14px] text-[14px]'>{allHoldings}</div>
             <div className='h-[14px] leading-[14px]'>$FUN</div>

@@ -152,16 +152,16 @@ const Sidebar: React.FC = () => {
           <div className='flex h-[65px] w-[65px] items-center justify-center rounded-full p-2 shadow-md'>
             <Image
               priority
-              src={'/png/harpoon_logo.png'}
+              src={'/png/fiero_logo.png'}
               alt='harpoon logo'
               width={80}
               height={40}
             />
           </div>
-          <Text variant='h3' className='mt-2 font-[800]'>
+          <Text variant='h3' className='mt-2 font-[800] font-typewriter'>
             Guest
           </Text>
-          <Button className='mt-4 w-4/5 md:w-full' onClick={handleLogin}>
+          <Button className='mt-4 w-4/5 md:w-full font-typewriter' onClick={handleLogin}>
             Log In
           </Button>
           <div className='mt-2 flex flex-row'>
@@ -191,7 +191,7 @@ const Sidebar: React.FC = () => {
               ? `${user?.firstName} ${user?.lastName}`
               : `${getEmailName(user?.email || 'User')}`}
           </Text>
-          <div className='mt-4 flex flex-row space-x-1'>
+          <div className='mt-2 flex flex-row space-x-1'>
             <span className='text-[14px] font-[800] text-text-primary'>
               {`${allHoldings} $FUN`}
             </span>
@@ -222,7 +222,7 @@ const Sidebar: React.FC = () => {
     <aside
       ref={ref}
       className={clsx(
-        'fixed bottom-0 top-0 z-50 grid w-64 self-start bg-bg-white shadow-lg duration-300 ease-in-out md:sticky',
+        'fixed bottom-0 top-0 z-50 font-typewriter grid w-64 self-start bg-bg-white shadow-lg duration-300 ease-in-out md:sticky',
         isDrawerOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'
       )}
       aria-label='Sidebar'
@@ -286,10 +286,10 @@ const Sidebar: React.FC = () => {
           <div className='mt-20 flex flex-col items-center justify-center'>
             <Link href='/' target='_blank'>
               <Image
-                src='/png/harpoon_logo.png'
-                alt='harpoon logo'
-                width={94}
-                height={49}
+                src='/png/fiero_logo.png'
+                alt='fiero logo'
+                width={70}
+                height={36}
               />
             </Link>
             <div

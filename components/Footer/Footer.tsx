@@ -10,11 +10,11 @@ export const Footer: FC<FooterProps> = ({ className }) => {
   return (
     <div className={
       clsx(
-        'flex max-w-[350px] mt-4 flex-col gap-2 px-8 py-4',
+        'flex max-w-[350px] mt-4 flex-col gap-2 px-8 py-4 font-typewriter',
         className
       )
     }>
-      <p className='text-center text-[10px] font-semibold text-xs text-text-black-2'>
+      <p className='text-center text-[12px] font-semibold text-xs text-text-black-2'>
         Powered By{' '}
         <a
           href='https://www.glass.fun'
@@ -24,7 +24,7 @@ export const Footer: FC<FooterProps> = ({ className }) => {
           GLASS.fun
         </a>
       </p>
-      <p className='text-center text-[10px] font-semibold text-xs text-text-black-2'>
+      <p className='text-center text-[12px] font-semibold text-xs text-text-black-2'>
         <Link href='/tos' target='_blank'>
           Terms and Conditions
         </Link>{' '}

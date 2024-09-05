@@ -16,6 +16,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        typewriter: ['var(--font-typewriter)'],
+        knockout: ['var(--font-knockout)'],
         poppins: ['var(--font-poppins)', fontFamily.sans],
       },
       colors: {
@@ -76,7 +78,7 @@ module.exports = {
         'bg-gray-yellow': '#F6EADE',
         'bg-primary': '#EE1D23',
         'bg-light-blue': '#A1F4FF',
-        'bg-red': '#EE1D23',
+        'bg-red': '#F15310',
 
         'border-1': '#EBEBEB',
         'border-2': 'rgba(0,0,0,0.26)',
@@ -87,15 +89,15 @@ module.exports = {
         'border-pink': '#C63663',
         'border-primary': '#EE1D23',
 
-        'button-primary': '#EE1D23',
-        'button-primary-hover': '#EE1D23',
+        'button-primary': '#C34D37',
+        'button-primary-hover': '#A32D17',
         'button-text-primary': '#FFFFFF',
         'button-secondary': '#C63663',
         'button-secondary-hover': '#A61643',
         'button-text-secondary': '#FFFFFF',
         'button-bg-1': 'rgba(238, 29, 35, 0.11)',
 
-        'text-primary': '#EE1D23',
+        'text-primary': '#C34D37',
         'text-secondary': '#BFBFBF',
         'text-disabled': '#515151',
         'text-sub': '#BFBFBF',

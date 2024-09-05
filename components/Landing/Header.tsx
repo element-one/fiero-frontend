@@ -31,7 +31,7 @@ const LandingHeader = () => {
     <>
       <header className='flex w-full flex-row flex-wrap justify-between px-6 py-5 md:px-20'>
         <Link href='/'>
-          <Image src={'/png/harpoon_logo.png'} alt='harpoon logo' width={90} />
+          <Image src={'/png/fiero_logo.png'} alt='fiero logo' width={90} />
         </Link>
         <div className='hidden md:flex md:flex-row md:items-center md:space-x-12'>
           <LandingHeaderAppButton path='/' />
