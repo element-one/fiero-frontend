@@ -1,0 +1,7 @@
+node_modules
+.next
+.cache
+public
+next-env.d.ts
+next.config.ts
+yarn.lock

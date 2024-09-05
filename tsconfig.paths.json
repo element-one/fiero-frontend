@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@abi/*": ["./abi/*"],
+      "@config/*": ["./config/*"],
+      "@components/*": ["./components/*"],
+      "@contexts/*": ["./contexts/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@lib/*": ["./lib/*"],
+      "@pages/*": ["./pages/*"],
+      "@queries/*": ["./queries/*"],
+      "@services/*": ["./services/*"],
+      "@store/*": ["./store/*"],
+      "@styles/*": ["./styles/*"],
+      "@testing/*": ["./testing/*"],
+      "@theme/*": ["./theme/*"],
+      "@type/*": ["./types/*"],
+      "@utils/*": ["./utils/*"]
+    }
+  }
+}

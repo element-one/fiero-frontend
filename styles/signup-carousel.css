@@ -1,0 +1,34 @@
+.dot-list-md {
+  padding-bottom: 0px;
+}
+.dot-list-sm {
+  padding-bottom: 16px;
+}
+
+.react-multi-carousel-dot button {
+  background-color: #ee1023;
+  opacity: 0.13;
+  border: none;
+}
+
+.react-multi-carousel-dot--active button {
+  background: #ef6a00;
+  opacity: 1;
+}
+.react-multi-carousel-dot--active button:active {
+  background: #ffffff;
+}
+
+.react-multiple-carousel__arrow {
+  border: 1px solid #ef6a00;
+  opacity: 0.5;
+}
+
+.react-multiple-carousel__arrow:hover {
+  background-color: transparent !important;
+  opacity: 1;
+}
+
+.react-multiple-carousel__arrow::before {
+  color: #ef6a00;
+}

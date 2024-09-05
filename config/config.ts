@@ -1,0 +1,10 @@
+export const ALCHEMY_API_KEY = process.env.NEXT_PUBLIC_ALCHEMY_API_KEY
+export const ALCHEMY_URL = process.env.NEXT_PUBLIC_ALCHEMY_URL
+export const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_DAO_CONTRACT_ADDRESS
+export const ETHEREUM_NETWORK = process.env.NEXT_PUBLIC_ETHER_NETWORK
+export const INFURA_MAINNET = process.env.NEXT_PUBLIC_INFURA_MAINNET
+export const INFURA_RINKEBY = process.env.NEXT_PUBLIC_INFURA_RINKEBY
+export const MAGIC_PUBLISHABLE_KEY =
+  process.env.NEXT_PUBLIC_MAGIC_PUBLISHABLE_KEY
+export const MAGIC_SECRET = process.env.MAGIC_SECRET
+export const NETWORK_ID = process.env.NEXT_PUBLIC_NETWORK_ID || 5
