@@ -87,7 +87,7 @@ module.exports = {
         'border-white': '#FFFFFF',
         'border-orange': 'rgba(248, 167, 12, 0.40)',
         'border-pink': '#C63663',
-        'border-primary': '#EE1D23',
+        'border-primary': '#C34D37',
 
         'button-primary': '#C34D37',
         'button-primary-hover': '#A32D17',
