@@ -116,7 +116,7 @@ export const SocialConnect: React.FC<SocialConnectProps> = ({
           <Text
             variant='b1'
             size='semibold'
-            className='mt-3 text-text-black'
+            className='mt-3 text-text-black font-typewriter'
           >
             {socialTitle}
           </Text>
