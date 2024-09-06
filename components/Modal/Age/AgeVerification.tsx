@@ -59,7 +59,7 @@ export const AgeVerificationModal: React.FC<AgeVerificationModalProps> = ({
             >
               <Dialog.Panel
                 className='fixed flex transform flex-col items-center bg-bg-white justify-center 
-                  overflow-hidden rounded-xl p-6 
+                  overflow-hidden p-6 
                   text-left align-middle shadow-xl transition-all'
               >
                 <div className='mb-[50px] mt-4 flex flex-col items-center justify-center'>
