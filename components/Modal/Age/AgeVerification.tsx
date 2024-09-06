@@ -58,14 +58,14 @@ export const AgeVerificationModal: React.FC<AgeVerificationModalProps> = ({
               leaveTo='opacity-0 scale-95'
             >
               <Dialog.Panel
-                className='fixed flex transform flex-col items-center bg-bg-white justify-center 
-                  overflow-hidden p-6 
+                className='fixed flex transform flex-col w-full h-full md:w-fit md:h-fit items-center bg-bg-white justify-center 
+                  overflow-hidden py-6 px-12
                   text-left align-middle shadow-xl transition-all'
               >
-                <div className='mb-[50px] mt-4 flex flex-col items-center justify-center'>
+                <div className='mb-4 mt-4 flex flex-col items-center justify-center'>
                   <div className='mt-4 flex flex-col items-center'>
-                    <span className='whitespace-nowrap font-typewriter text-[30px] leading-[45px] font-[800] text-center text-text-black'>
-                      Are you of  legal drinking age
+                    <span className='whitespace-nowrap font-typewriter text-[24px] md:text-[30px] leading-[45px] font-[800] text-center text-text-black'>
+                      Are you of legal drinking age
                       <br />
                       in the US?
                     </span>
@@ -73,14 +73,14 @@ export const AgeVerificationModal: React.FC<AgeVerificationModalProps> = ({
 
                   <div className='mt-8 flex items-center justify-center gap-2'>
                     <Button
-                      className='h-[52px] w-[175px] border-border-primary font-[800]'
+                      className='h-[52px] w-[135px] md:w-[175px] border-border-primary font-[800]'
                       onClick={handleYes}
                     >
                       <Text variant='b1'>YES</Text>
                     </Button>
                     <Button
                       variant='outline'
-                      className='h-[52px] w-[175px] border-border-primary font-[800]'
+                      className='h-[52px] w-[135px] md:w-[175px] border-border-primary font-[800]'
                       onClick={handleNo}
                     >
                       <Text variant='b1' className='text-text-primary'>
@@ -89,14 +89,16 @@ export const AgeVerificationModal: React.FC<AgeVerificationModalProps> = ({
                     </Button>
                   </div>
                   {notOldEnough && (
-                    <div className='mt-6 text-b1 font-typewriter text-text-pink'>
+                    <div className='mt-6 text-b1 font-typewriter text-text-pink text-center'>
                       You are not old enough to view this content
                     </div>
                   )}
-                  <div className='mt-8 font-typewriter text-center text-[21px] leading-[32px] text-text-black opacity-80'>
-                    By entering this site you agreeing to the Terms of
+                  <div className='mt-8 font-typewriter text-center text-[12px] md:text-[21px] md:leading-[32px] text-text-black opacity-80'>
+                    By entering this site you agreeing to the
                     <br />
-                    Use and Privacy Policy
+                    <a href="/tos" target="_blank" className='underline'>Terms of Use</a>&nbsp;
+                    and &nbsp;
+                    <a href="/privacy" target="_blank" className='underline'>Privacy Policy</a>
                   </div>
                 </div>
               </Dialog.Panel>
