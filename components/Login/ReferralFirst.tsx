@@ -21,7 +21,7 @@ export const ReferralFirst: React.FC<ReferralFirstProps> = ({
           size='semibold'
           className='mt-[22px] text-center text-white'
         >
-          Welcome to Harpoon!
+          Welcome to Fiero!
         </Text>
         <Text
           variant='sg'

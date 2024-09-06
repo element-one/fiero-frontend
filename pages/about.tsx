@@ -11,10 +11,10 @@ const AboutPage: NextPage = () => {
       <LandingHeader />
       <div className='mx-auto max-w-[1200px]'>
         <Text variant='sm' className='mb-6 text-center md:mb-10'>
-          Harpoon: by Gen Z for Gen Z
+          Fiero: by Gen Z for Gen Z
         </Text>
         <Text variant='h3' className='mb-2 px-6 md:mb-4 md:px-40'>
-          Hey there, we’re Hugh and Hannah! We started Harpoon because we
+          Hey there, we’re Hugh and Hannah! We started Fiero because we
           want to reward people for chiming in on the issues, stories, and
           events that matter to our generation. Whether it’s a video of yourself
           reacting to a news story or a great edit you made that makes people
@@ -25,7 +25,7 @@ const AboutPage: NextPage = () => {
           At the end of the day, we believe what our generation wants is simple:
           equal opportunity to succeed in America, rights over our lives and
           bodies, and affordable access to basic necessities like housing,
-          healthcare, and education. Harpoon contests give you the info
+          healthcare, and education. Fiero contests give you the info
           you need to start the conversation, but we want you to bring your own
           perspectives, stories, and opinions to the videos you post.
         </Text>
@@ -78,7 +78,7 @@ const AboutPage: NextPage = () => {
         <Text variant='b1' className='mb-10 px-6 md:mb-8 md:px-40'>
           The internet is overflowing with bullsh*t and we’re all sick and tired
           of it. From lies and misinformation to AI-generated sludge, things are
-          getting weird out here. Join Harpoon to become a part of a
+          getting weird out here. Join Fiero to become a part of a
           community of young Americans working to change the conversation,
           spread the word about the important stuff, and have a good time doing
           it 🙌

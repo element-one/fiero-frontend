@@ -62,7 +62,7 @@ const Init: FC<InitProps> = ({ onButtonClick }) => {
               <br />
               receipt to earn
               <br />
-              Harpoon points
+              Fiero points
             </Text>
             <Button className='!bg-bg-white text-text-black hover:opacity-95 w-[236px]' onClick={handleClick}>
               {isMobile ? 'Take a picture' : 'Upload receipt'}

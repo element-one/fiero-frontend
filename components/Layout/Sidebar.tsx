@@ -153,7 +153,7 @@ const Sidebar: React.FC = () => {
             <Image
               priority
               src={'/png/fiero_logo.png'}
-              alt='harpoon logo'
+              alt='fiero logo'
               width={80}
               height={40}
             />

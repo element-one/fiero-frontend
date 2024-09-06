@@ -161,9 +161,9 @@ const RaffleModal: FC<RaffleModalProps> = ({ onClose }) => {
         <ModalBody className='h-full overflow-auto'>
           <div className='mx-auto flex h-full max-w-[520px] flex-col items-center justify-between py-5'>
             <Image
-              src='/svg/harpoon_logo.svg'
+              src='/png/fiero_logo.png'
               width={232}
-              alt='harpoon'
+              alt='Fiero'
             />
             <Image
               src='/png/raffle.png'
@@ -172,7 +172,7 @@ const RaffleModal: FC<RaffleModalProps> = ({ onClose }) => {
               className='mt-[60px]'
             />
             <div className='mt-15 text-center text-[30px] font-[600] text-text-black'>
-              Enter the Friends of Harpoon sweepstakes!
+              Enter the Friends of Fiero sweepstakes!
             </div>
             <div className='mt-[14px] text-center text-[16px] font-[500] text-text-black opacity-60'>
               Try your luck below!

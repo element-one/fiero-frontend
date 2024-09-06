@@ -22,7 +22,7 @@ export const GeneralFirstSm: React.FC<GeneralFirstSmProps> = ({
         size='semibold'
         className='mt-[60px] text-center text-white'
       >
-        Welcome to Harpoon!
+        Welcome to Fiero!
       </Text>
     </div>
   )

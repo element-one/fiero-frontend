@@ -52,7 +52,7 @@ export const ClaimRewardsModal: React.FC<ClaimRewardsModalProps> = ({
       case 'survey':
         return 'Survey Completed!';
       case 'receipt':
-        return 'You’ve earned 900 points that you can use now or later for exciting Harpoon rewards';
+        return 'You’ve earned 900 points that you can use now or later for exciting Fiero rewards';
       case 'social':
         return 'You’ve shared your photo!';
       default:
