@@ -39,7 +39,7 @@ export const RedeemQRCodeModal: React.FC<RedeemQRCodeModalProps> = ({
             <div className='relative w-full shrink-0 overflow-hidden'>
               <img
                 src={reward?.imageUrl}
-                alt='harpoon'
+                alt='fiero'
                 className='max-h-[440px] w-full object-fill'
               />
               <div className='absolute bottom-[-100px] left-[-10%] h-[200px] w-[120%] rounded-[50%] bg-bg-gray-yellow'></div>
@@ -48,7 +48,7 @@ export const RedeemQRCodeModal: React.FC<RedeemQRCodeModalProps> = ({
               {reward?.name}
             </div>
             <div className='w-full mt-7 max-w-[520px] px-6 text-center text-[15px] font-[500] text-text-black opacity-60'>
-              Congrats, friend! You’ve redeemed your points for a prize. Show this QR code to a Harpoon rep to receive your reward.
+              Congrats, friend! You’ve redeemed your points for a prize. Show this QR code to a Fiero rep to receive your reward.
             </div>
             <div className='my-10 w-2/3 max-w-[380px]'>
               <QRCode

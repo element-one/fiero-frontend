@@ -174,7 +174,7 @@ export const RedeemTokenModal: React.FC<RedeemTokenModalProps> = ({
                     >
                       {isRaffle
                         ? 'Every ticket you’ve earned from completing contests will be entered into the next giveaway drawing. Participants will be notified directly of the winner.'
-                        : `Spend your points to unlock a 50% off code for your next Harpoon brewery tour.`}
+                        : `Spend your points to unlock a 50% off code for your next Fiero brewery tour.`}
                     </Text>
                   )}
                   {errorMessage && (

@@ -68,7 +68,7 @@ const LandingSignUpProcess = () => {
             size='semibold'
             className='px-7 py-1 text-neutral-1000'
           >
-            Enter Harpoon
+            Enter Fiero
           </Text>
         </Button>
       </div>

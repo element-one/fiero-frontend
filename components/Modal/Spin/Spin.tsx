@@ -70,9 +70,9 @@ const SpinModal: FC<SpinModalProps> = ({ onClose }) => {
         <ModalBody className='h-full overflow-auto'>
           <div className='mx-auto flex h-full max-w-[520px] flex-col items-center justify-between py-5'>
             <Image
-              src='/svg/harpoon_logo.svg'
+              src='/png/fiero_logo.png'
               width={232}
-              alt='harpoon'
+              alt='fiero'
             />
             <Image
               src='/png/spin.png'
@@ -81,7 +81,7 @@ const SpinModal: FC<SpinModalProps> = ({ onClose }) => {
               className='mt-4'
             />
             <div className='mt-15 text-center text-[30px] font-[800] uppercase'>
-              Spin the Harpoon wheel!
+              Spin the Fiero wheel!
             </div>
             <div className='mt-[14px] text-center text-[16px] font-[500] opacity-60'>
               Try your luck below!

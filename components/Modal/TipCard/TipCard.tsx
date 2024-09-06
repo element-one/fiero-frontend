@@ -79,7 +79,7 @@ export const TipModal: React.FC<TipModalProps> = ({ isEarn }) => {
                           ) : (
                             <>
                               <div className='mb-3 line-clamp-1 text-base font-bold text-text-primary'>
-                                How do I redeem tickets on Harpoon?
+                                How do I redeem tickets on Fiero?
                               </div>
                               <div className='text-[14px] font-normal text-text-secondary'>
                                 Click on the ‘Reward’ cards below to learn more

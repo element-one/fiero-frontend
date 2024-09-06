@@ -132,7 +132,7 @@ export const PhoneNumberModal: React.FC<PhoneNumberModalProps> = ({
                       <Text variant='b3' className='text-text-black'>
                         By providing my phone number, I understand that I am
                         consenting to receive autodialed and manual text
-                        messages and phone calls from Harpoon on my mobile
+                        messages and phone calls from Fiero on my mobile
                         phone.{' '}
                         <Link
                           href='/privacy'

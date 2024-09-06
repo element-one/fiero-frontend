@@ -18,7 +18,7 @@ const LandingHeaderAppButton = ({ path }: { path?: string }) => {
       className='mx-auto md:m-0'
     >
       <Text variant='b1' size='semibold' className='px-7 py-1 text-text-white'>
-        Back To Harpoon
+        Back To Fiero
       </Text>
     </Button>
   )

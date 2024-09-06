@@ -64,35 +64,35 @@ const ReferralPage: NextPage = () => {
   return (
     <Layout>
       <div className='flex min-h-screen h-[100vh] overflow-y-auto w-full flex-col bg-bg-white'>
-        <div className='bg-bg-red sticky top-0 z-10'>
+        <div className='bg-bg-black sticky top-0 z-10'>
           <MobileHeading />
         </div>
-        <div className='flex flex-col items-center justify-center bg-bg-red pt-3'>
+        <div className='flex flex-col items-center justify-center bg-[url(/png/onboarding_bg.png)] bg-center bg-cover pt-3'>
           <Text
             variant='h1s'
-            className='mt-[45px] line-clamp-2 px-7 text-center text-[24px] text-white md:w-[530px]'
+            className='mt-[45px] line-clamp-2 px-7 text-center text-white md:w-[530px]'
           >
-            <span className='font-[600]'>
+            <span className='font-[600] uppercase text-[34px] font-knockout'>
               Invite friends to
               <br />
-              Harpoon Rewards
+              Fiero Rewards
             </span>
           </Text>
           <img
-            src='/png/ticket_icon.png'
-            className='my-4 mt-[-60px] h-[342px]'
+            src='/png/sign_up_success.png'
+            className='my-4 h-[268px]'
             alt='congrats'
           />
           <Text
             variant='b1'
             size='medium'
-            className='mt-[-30px] px-4 text-center !text-[14px] text-text-white md:w-[440px] md:px-6'
+            className='px-4 text-center !text-[14px] font-typewriter text-text-white md:w-[440px] md:px-6'
           >
-            {`You and your friend will each get 150 points once your friend joined.`}
+            You and your friend will each get 100 points once your friend joins and completes their first challenge.
           </Text>
           <div className=' mx-4 mt-[28px] flex w-fit flex-row items-center justify-between space-x-5 rounded-full border-[1px] border-gray-600 bg-bg-white px-4 py-[14px] md:mx-0 md:w-[373px]'>
-            <div className='flex max-w-[280px] text-center text-[13px] font-[600] text-text-black'>
-              <span className=' w-full'>{referral}</span>
+            <div className='flex max-w-[280px] text-center text-[16px] font-[600] text-text-black'>
+              <span className='w-full font-typewriter'>{referral}</span>
             </div>
             <IconButton
               className='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-bg-primary p-2'
@@ -101,7 +101,7 @@ const ReferralPage: NextPage = () => {
               <img
                 src='/img/duplicate.svg'
                 alt='duplicate'
-                className='h-8 w-8 object-contain'
+                className='h-5 w-5 object-contain'
               />
             </IconButton>
           </div>
@@ -110,7 +110,7 @@ const ReferralPage: NextPage = () => {
           </div>
           <div className='flex w-full bg-bg-white'>
             <div className='mx-auto mt-[-20px] flex w-full flex-col items-start justify-start bg-bg-white px-5 md:w-[520px] md:px-0'>
-              <div className='w-full'>
+              <div className='w-full pb-8'>
                 <Tab.Group
                   manual
                   selectedIndex={selectedTab}
@@ -118,7 +118,7 @@ const ReferralPage: NextPage = () => {
                 >
                   <Tab.List
                     className={
-                      'my-5 flex h-12 w-full items-center justify-center border-b-[1px]  font-[600] text-text-black text-opacity-80'
+                      'my-5 flex h-12 w-full items-center justify-center border-b-[1px] font-typewriter font-[600] text-text-black text-opacity-80'
                     }
                   >
                     <Tab
@@ -152,7 +152,7 @@ const ReferralPage: NextPage = () => {
                         <Text
                           variant='b1'
                           size='medium'
-                          className='w-full text-left text-text-black'
+                          className='w-full text-left text-text-black font-typewriter'
                           suppressHydrationWarning
                         >
                           {totalPoints} points earned
@@ -167,7 +167,7 @@ const ReferralPage: NextPage = () => {
                         <Text
                           variant='b1'
                           size='medium'
-                          className='w-full text-left text-text-black'
+                          className='w-full text-left text-text-black font-typewriter'
                           suppressHydrationWarning
                         >
                           {totalPoints} points earned
@@ -182,7 +182,7 @@ const ReferralPage: NextPage = () => {
                         <Text
                           variant='b1'
                           size='medium'
-                          className='w-full text-left text-text-black'
+                          className='w-full text-left text-text-black font-typewriter'
                           suppressHydrationWarning
                         >
                           {totalPoints} points earned

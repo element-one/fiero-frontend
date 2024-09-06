@@ -28,7 +28,7 @@ export const useStore = create<StoreState>()(
       ...createOnBoardingSlice(...a),
     }),
     {
-      name: 'harpoon-fun',
+      name: 'fiero-fun',
     }
   )
 )
