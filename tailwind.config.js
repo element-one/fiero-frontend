@@ -76,7 +76,7 @@ module.exports = {
         'bg-espresso': '#3E342F',
         'bg-light': 'rgba(255, 194, 102, 0.33)',
         'bg-gray-yellow': '#F6EADE',
-        'bg-primary': '#EE1D23',
+        'bg-primary': '#C34D37',
         'bg-light-blue': '#A1F4FF',
         'bg-red': '#F15310',
 

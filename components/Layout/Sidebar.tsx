@@ -271,7 +271,7 @@ const Sidebar: React.FC = () => {
                   className='h-6 w-6'
                 />
                 <div className='flex w-fit flex-col'>
-                  <span className='ml-1 text-left text-[14px] font-[800] uppercase text-text-primary'>
+                  <span className='ml-1 text-left text-[14px] font-[800] text-text-primary'>
                     Invite friends
                   </span>
                 </div>

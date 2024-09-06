@@ -65,10 +65,10 @@ const ProfilePage: NextPage = () => {
   return (
     <Layout>
       <div className='flex min-h-screen h-[100vh] overflow-y-auto w-full flex-col bg-bg-white'>
-        <div className='bg-bg-primary sticky top-0 z-10'>
+        <div className='bg-bg-black sticky top-0 z-10'>
           <MobileHeading />
         </div>
-        <div className='relative h-[380px] shrink-0 w-full overflow-hidden bg-bg-primary'>
+        <div className='relative h-[380px] shrink-0 w-full overflow-hidden bg-[url(/png/onboarding_bg.png)] bg-center bg-cover'>
           <div className='absolute bottom-[-150px] left-[-5%] h-[300px] w-[110%] rounded-[50%] bg-bg-white'></div>
         </div>
         <div className='flex flex-col px-4 md:flex-row md:space-x-8 md:px-20'>
@@ -99,43 +99,36 @@ const ProfilePage: NextPage = () => {
                 </Button>
               </div>
               <Text variant='h1s' className='mt-6 text-text-black'>
-                <span className='font-[600]'>
+                <span className='font-[600] font-knockout uppercase'>
                   {userData?.user.firstName
                     ? `${userData?.user.firstName} ${userData?.user.lastName}`
                     : `${getEmailName(userData?.user.email)}`}
                 </span>
               </Text>
-              <Text variant='b1' className='mt-2 text-text-black opacity-60'>
-                {`Member since ${formatMemberSince(userData?.user.createdAt)}`}
+              <Text variant='b1' className='mt-2 text-text-black opacity-60 font-typewriter'>
+                {`Heat Seeker Since ${formatMemberSince(userData?.user.createdAt)}`}
               </Text>
 
               <div className='mt-6 flex flex-col items-center justify-center gap-2'>
-                <div className='my-6 flex w-fit flex-row items-center justify-between rounded-full border border-border-orange bg-bg-light px-4 py-2'>
-                  <div className='flex flex-row items-center'>
-                    <img
-                      src='/png/profile_points.png'
-                      className='h-7 w-7 object-fill'
-                      alt='rewards'
-                    />
-                  </div>
+                <div className='my-6 flex flex-row w-[217px] h-[47px] items-center justify-center rounded-full border border-border-orange bg-bg-light px-4 py-2'>
                   <Text
                     variant='b3'
-                    className='ml-2 text-right text-text-light-orange'
+                    className='ml-2 text-center !text-[14px] text-text-light-orange font-typewriter'
                   >
-                    {`${isHoldingsLoading ? '-' : allHoldings} points earned`}
+                    🌶️ &nbsp;&nbsp;{`${isHoldingsLoading ? '-' : allHoldings} points earned`}
                   </Text>
                 </div>
 
                 <div
                   onClick={handleGoToReferral}
-                  className='flex cursor-pointer items-center justify-center gap-2 rounded-full border border-border-primary px-6 py-[9px] text-text-primary'
+                  className='flex cursor-pointer w-[217px] h-[52px] items-center justify-center gap-2 rounded-full border border-border-primary px-6 py-[9px] text-text-primary'
                 >
                   <img
                     src='/svg/profile-add.svg'
                     alt='profile add'
                     className='h-6 w-6'
                   />
-                  <span className='text-[16px] font-[600]'>Invite Friends</span>
+                  <span className='text-[16px] font-[600] font-typewriter'>Invite Friends</span>
                 </div>
               </div>
             </div>
@@ -148,17 +141,17 @@ const ProfilePage: NextPage = () => {
           </div>
         )}
         {!isUserLoading && (
-          <div className='mt-[10px] flex items-center justify-center gap-4 px-4 py-8 md:mt-[100px] md:gap-8 md:px-20 '>
+          <div className='mt-[10px] flex items-center justify-center gap-2 md:gap-4 px-4 py-8 md:mt-[100px] md:gap-8 md:px-20 '>
             <SocialConnect
               socialType='instagram'
               mediaCount={instagramData?.profile.mediaCount ?? 0}
             />
-            <div className='h-full w-[2px] bg-bg-gray'></div>
+            <div className='h-[70%] shrink-0 w-[2px] bg-bg-gray'></div>
             <SocialConnect
               socialType='tiktok'
               mediaCount={tiktokData?.profile.mediaCount ?? 0}
             />
-            <div className='h-full w-[2px] bg-bg-gray'></div>
+            <div className='h-[70%] shrink-0 w-[2px] bg-bg-gray'></div>
             <SocialConnect socialType='twitter' />
           </div>
         )}
