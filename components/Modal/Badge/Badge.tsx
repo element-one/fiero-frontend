@@ -63,7 +63,7 @@ export const BadgeModal: React.FC<BadgeModalProps> = ({ onClose }) => {
               leaveFrom='opacity-100 scale-100'
               leaveTo='opacity-0 scale-95'
             >
-              <Dialog.Panel className='flex min-h-screen w-full transform items-center justify-center overflow-hidden bg-bg-gray-yellow transition-all'>
+              <Dialog.Panel className='flex min-h-screen w-full transform items-center justify-center overflow-hidden bg-bg-white transition-all'>
                 <Confetti className='h-full w-full' />
                 <div className='flex h-full mb-6 w-full flex-col items-center justify-center'>
                   <div className='mt-[30px] flex w-full max-w-[80%] uppercase border-[12px] border-border-white rounded-tl-full overflow-hidden rounded-tr-full flex-col items-center md:mt-[36px] md:max-w-[420px]'>
@@ -73,18 +73,18 @@ export const BadgeModal: React.FC<BadgeModalProps> = ({ onClose }) => {
                       alt='badge'
                     />
 
-                    <div className='py-5 text-center text-text-white w-full bg-bg-primary'>
-                      Points claimed!
+                    <div className='py-5 text-center font-typewriter uppercase text-text-white w-full bg-bg-primary'>
+                      {earn?.points} points for you!
                     </div>
                   </div>
                   <div className='mt-[60px] flex w-full flex-col items-center justify-center px-6 md:w-[520px]'>
-                    <div className='text-[26px] font-[800] leading-8 text-text-black'>
-                      You’ve earned points!
+                    <div className='text-[36px] uppercase font-knockout font-[800] leading-8 text-text-black'>
+                      Congrats, friend!
                     </div>
-                    <Text variant='sm' className='mt-4 text-text-black'>
+                    <Text variant='sm' className='mt-4 text-text-black font-typewriter'>
                       {earn?.name}
                     </Text>
-                    <div className='mt-[14px] text-[16px] font-normal leading-5 text-text-black opacity-80'>
+                    <div className='mt-[14px] text-[16px] font-normal leading-5 font-typewriter text-text-black opacity-80'>
                       Your badge and tokens have been added to your profile.
                       Check out the Redeem page to use your tokens to unlock
                       exciting rewards and experiences!

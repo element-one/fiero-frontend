@@ -108,7 +108,7 @@ export const InstagramLinkModal: React.FC<InstagramLinkModalProps> = ({
                 </button>
                 <Text
                   variant='h1'
-                  className='mt-16 text-center text-text-black'
+                  className='mt-16 text-center text-text-black font-typewriter'
                 >
                   Link Your Instagram Account
                 </Text>
@@ -124,9 +124,9 @@ export const InstagramLinkModal: React.FC<InstagramLinkModalProps> = ({
                       onChange={handleChange}
                       id='username'
                       placeholder={'instagram username'}
-                      className='flex h-[42px] w-1/2 rounded-lg border border-solid border-border-primary  px-[16px] text-text-black md:w-[300px]'
+                      className='flex h-[42px] w-1/2 rounded-lg border font-typewriter border-solid border-border-primary  px-[16px] text-text-black md:w-[300px]'
                     ></input>
-                    {errorMessage && <div className='text-text-pink text-[14px]'>{errorMessage}</div>}
+                    {errorMessage && <div className='text-text-pink text-[14px] font-typewriter'>{errorMessage}</div>}
                   </div>
                   <Button
                     className='w-[200px] text-[16px]'

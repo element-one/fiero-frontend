@@ -91,7 +91,7 @@ export const ClaimRewardsModal: React.FC<ClaimRewardsModalProps> = ({
               leaveFrom='opacity-100 scale-100'
               leaveTo='opacity-0 scale-95'
             >
-              <Dialog.Panel className='flex flex-col min-h-screen w-full transform items-center justify-around overflow-hidden rounded-xl transition-all bg-bg-gray-yellow'>
+              <Dialog.Panel className='flex flex-col min-h-screen w-full transform items-center justify-around overflow-hidden rounded-xl transition-all bg-bg-white'>
                 <div className='flex h-full w-full flex-col items-center justify-start'>
                   <button
                     className='absolute right-0 top-[10px] text-text-black md:right-8 md:top-1'
@@ -105,7 +105,7 @@ export const ClaimRewardsModal: React.FC<ClaimRewardsModalProps> = ({
                       className='h-[132px] md:h-[192px]'
                       alt='reward'
                     />
-                    {earn?.type !== 'survey' && (
+                    {earn?.type !== 'survey' && earn?.type !== 'receipt' && (
                       <img
                         src='/svg/check.svg'
                         alt='check'
@@ -118,10 +118,15 @@ export const ClaimRewardsModal: React.FC<ClaimRewardsModalProps> = ({
                     size='medium'
                     className='mt-[34px] w-full text-center text-text-black md:mt-[59px]'
                   >
-                    <span className='font-[600] inline-block text-center text-[24px] max-w-[400px] w-full'>
-                      {getText(earn?.type)}
+                    <span className='font-[600] inline-block text-center text-[32x] uppercase font-knockout max-w-[400px] w-full'>
+                      {earn?.type === 'receipt' ? 'Congratulations!' : getText(earn?.type)}
                     </span>
                   </Text>
+                  {earn?.type === 'receipt' && (
+                    <div className='font-[600] inline-block text-center text-[24px] font-typewriter max-w-[400px] w-full'>
+                      {getText('receipt')}
+                    </div>
+                  )}
                   {!isClaimed && (
                     <div className='flex w-full flex-row justify-center px-5'>
                       <Button
@@ -153,25 +158,21 @@ export const ClaimRewardsModal: React.FC<ClaimRewardsModalProps> = ({
                       </Text>
                     </Button>
                   )}
-                  <div className='my-[37px] flex flex-row items-center justify-between rounded-full bg-bg-light px-4 py-3'>
-                    <img
-                      src='/svg/crown.svg'
-                      alt='icon'
-                      className='h-6 w-6'
-                    />
+                  <div className='my-[37px] flex flex-row items-center justify-between rounded-[10px] bg-bg-light px-4 py-3'>
+                    🌶️&nbsp;
                     <div className='flex flex-row items-center'>
                       <Text
                         variant='b3'
                         className='ml-1 mr-3 text-text-black opacity-60 md:mr-3'
                       >
-                        <span className='font-[400] opacity-70'>Rewards</span>
+                        <span className='font-[400] opacity-70 font-typewriter'>Rewards</span>
                       </Text>
                     </div>
                     <Text
                       variant='b3'
                       className='mr-1 text-right text-text-black'
                     >
-                      <span className='font-[800]'>{earn?.points} Points</span>
+                      <span className='font-[800] font-typewriter'>{earn?.points} Points</span>
                     </Text>
                   </div>
                 </div>

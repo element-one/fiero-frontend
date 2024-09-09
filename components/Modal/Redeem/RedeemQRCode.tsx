@@ -34,7 +34,7 @@ export const RedeemQRCodeModal: React.FC<RedeemQRCodeModalProps> = ({
       }}
     >
       <ModalContent>
-        <ModalBody className='overflow-auto px-0 py-0 bg-bg-gray-yellow'>
+        <ModalBody className='overflow-auto px-0 py-0 bg-bg-white'>
           <div className='relative z-0 flex h-full w-full flex-col items-center pb-10'>
             <div className='relative w-full shrink-0 overflow-hidden'>
               <img
@@ -42,12 +42,12 @@ export const RedeemQRCodeModal: React.FC<RedeemQRCodeModalProps> = ({
                 alt='fiero'
                 className='max-h-[440px] w-full object-fill'
               />
-              <div className='absolute bottom-[-100px] left-[-10%] h-[200px] w-[120%] rounded-[50%] bg-bg-gray-yellow'></div>
+              <div className='absolute bottom-[-100px] left-[-10%] h-[120px] md:h-[200px] w-[120%] rounded-[50%] bg-bg-white'></div>
             </div>
-            <div className='w-full max-w-[520px] px-6 text-center text-[28px] font-[600] text-text-black'>
+            <div className='w-full max-w-[520px] font-knockout px-6 text-center text-[38px] font-[600] text-text-black'>
               {reward?.name}
             </div>
-            <div className='w-full mt-7 max-w-[520px] px-6 text-center text-[15px] font-[500] text-text-black opacity-60'>
+            <div className='w-full mt-7 max-w-[520px] px-6 text-center text-[15px] font-typewriter font-[500] text-text-black opacity-60'>
               Congrats, friend! You’ve redeemed your points for a prize. Show this QR code to a Fiero rep to receive your reward.
             </div>
             <div className='my-10 w-2/3 max-w-[380px]'>

@@ -65,12 +65,12 @@ export const DiscountSuccessModal: React.FC<DiscountSuccessModalProps> = ({
                 <img src={reward?.imageUrl} className='w-full' alt='congrats' />
                 <div className='absolute bottom-[-100px] left-[-10%] h-[200px] w-[120%] rounded-[50%] bg-bg-gray-yellow'></div>
               </div>
-              <span className='z-20 mt-[-40px] w-full text-center text-[30px] font-[600] text-text-black md:mt-[36px]'>
+              <span className='z-20 mt-[-40px] w-full text-center font-knockout text-[34px] font-[600] text-text-black md:mt-[36px]'>
                 {reward?.name}
               </span>
               <Text
                 variant='b1'
-                className='mt-6 w-full text-center text-text-black'
+                className='mt-6 w-full text-center text-text-black !font-typewriter'
               >
                 Congrats, friend! You’ve redeemed your
                 <br />
@@ -81,20 +81,20 @@ export const DiscountSuccessModal: React.FC<DiscountSuccessModalProps> = ({
               <div className='mt-12 flex w-[266px] flex-row items-center justify-between rounded-full bg-bg-white pr-4 pl-6 py-[14px] md:w-[298px]'>
                 <Text
                   variant='h4'
-                  className='text-center font-[500] text-text-black text-[22px]'
+                  className='text-center font-[500] text-text-black text-[22px] !font-typewriter'
                 >
                   {userReward?.discount?.code}
                 </Text>
-                <Button className='p-[10px] uppercase' onClick={handleCopy}>
+                <Button className='p-[10px] font-typewriter' onClick={handleCopy}>
                   <img
                     src='/img/duplicate.svg'
                     alt='duplicate'
                     className='h-6 w-6'
                   />
-                  copy
+                  Copy
                 </Button>
               </div>
-              <div className='mt-4 text-text-black opacity-60 text-[14px]'>
+              <div className='mt-4 text-text-black opacity-60 text-[14px] font-typewriter'>
                 Don’t worry, we’ll also send a copy to your email!
               </div>
               <div className='mt-[56px] flex w-[266px] flex-row items-center justify-center md:w-[298px]'>

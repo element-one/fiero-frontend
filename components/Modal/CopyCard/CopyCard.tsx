@@ -31,7 +31,7 @@ export const CopyCard: React.FC<CopyCardProps> = ({ hashtagText }) => {
           variant='b1'
           hasHashtag
           hasMention
-          className='text-text-black'
+          className='text-text-black font-typewriter'
         >
           {hashtagText}
         </SocialText>

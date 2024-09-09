@@ -116,7 +116,7 @@ export const SurveyQuestModal: React.FC<SurveyQuestModalProps> = ({
               leaveFrom='opacity-100 scale-100'
               leaveTo='opacity-0 scale-95'
             >
-              <Dialog.Panel className='relative mt-0 min-h-screen w-full max-w-[1000px] transform overflow-hidden bg-bg-gray-yellow text-left align-middle shadow-xl transition-all md:min-h-fit md:rounded-[20px]'>
+              <Dialog.Panel className='relative mt-0 min-h-screen w-full max-w-[1000px] transform overflow-hidden bg-bg-white text-left align-middle shadow-xl transition-all md:min-h-fit md:rounded-[20px]'>
                 <div className='z-0 p-6 md:p-14 min-h-screen md:min-h-fit h-fit flex flex-col justify-between'>
                   <button
                     className='absolute right-3 top-4 text-text-black md:right-8'
@@ -139,33 +139,29 @@ export const SurveyQuestModal: React.FC<SurveyQuestModalProps> = ({
                             variant='h4'
                             className='text-center text-text-black'
                           >
-                            <span className='text-[24px] font-[600]'>
+                            <span className='text-[31px] font-[600] uppercase font-knockout'>
                               {earn?.name}
                             </span>
                           </Text>
                           <LinkText
                             variant='b1'
-                            className='mt-2 w-full max-w-[520px] text-center text-text-black text-[14px]'
+                            className='mt-2 w-full max-w-[520px] font-typewriter text-center text-text-black text-[14px]'
                           >
                             {earn?.description}
                           </LinkText>
                           <div className='mb-2 mt-2 flex flex-row items-center justify-between rounded-full bg-bg-light px-4 py-3 md:mb-4 md:mt-10'>
                             <div className='flex flex-row items-center'>
-                              <img
-                                src='/svg/crown.svg'
-                                className='h-[24px] w-[24px] object-fill'
-                                alt='rewards'
-                              />
+                              🌶️&nbsp;
                               <Text
                                 variant='b3'
-                                className='ml-1 mr-3 text-text-black md:mr-3 opacity-60'
+                                className='ml-1 mr-3 text-text-black md:mr-3 font-typewriter opacity-60'
                               >
                                 Rewards
                               </Text>
                             </div>
                             <Text
                               variant='b3'
-                              className='mr-1 text-right text-text-black font-semibold text-[15px]'
+                              className='mr-1 text-right text-text-black font-semibold font-typewriter text-[15px]'
                             >
                               {earn?.points} Points
                             </Text>

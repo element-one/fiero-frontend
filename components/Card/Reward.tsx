@@ -90,7 +90,7 @@ export const RewardCard: React.FC<RewardCardProps> = ({
   return (
     <div
       className={clsx(
-        'relative z-0 mb-5 flex flex-col flex-wrap rounded-[20px] bg-bg-white md:w-[100%] md:min-w-[284px]',
+        'relative z-0 mb-5 flex flex-col flex-wrap rounded-[20px] bg-bg-white md:w-[100%] md:min-w-[284px] shadow-md',
         !reward.isComing && 'cursor-pointer',
         reward.isComing && 'cursor-not-allowed grayscale-[50%]',
         className
@@ -131,14 +131,10 @@ export const RewardCard: React.FC<RewardCardProps> = ({
         )}
       </div>
 
-      <div className='absolute bottom-0 left-[10px] mx-auto mb-[-20px] flex w-[calc(100%-20px)] flex-col justify-between rounded-lg bg-bg-white px-6 pb-4 pt-5 shadow-lg'>
-        <div className='absolute -top-4 right-4 flex h-[36px] flex-row items-center rounded-full bg-bg-primary px-[8px]'>
-          <img
-            src={'/png/icon-can.png'}
-            className='h-[24px]'
-            alt='brand cover'
-          />
-          <Text variant='b1' className='ml-[8px] pr-2 text-white text-[12px] font-semibold'>
+      <div className='absolute bottom-0 left-[10px] mx-auto mb-[-20px] flex w-[calc(100%-20px)] flex-col justify-between rounded-lg bg-bg-primary px-6 pb-4 pt-5 shadow-lg'>
+        <div className='absolute -top-4 right-4 flex h-[36px] flex-row items-center rounded-full bg-bg-white px-[8px]'>
+          🌶️&nbsp;
+          <Text variant='b1' className='ml-[8px] pr-2  text-text-black font-typewriter text-[12px] font-semibold'>
             {reward?.points}
           </Text>
         </div>
@@ -147,14 +143,14 @@ export const RewardCard: React.FC<RewardCardProps> = ({
           size='semibold'
           className='mt-2 line-clamp-2 flex w-full items-center overflow-hidden text-[17px]'
         >
-          <span className='block max-h-[54px] w-full overflow-hidden text-ellipsis text-[16px] text-text-black'>
+          <span className='block max-h-[54px] w-full overflow-hidden font-typewriter text-ellipsis text-[16px] text-text-white'>
             {reward?.name}
           </span>
         </Text>
         <Text
           variant='b2'
           size='medium'
-          className='block max-h-[54px] w-full overflow-hidden text-ellipsis text-[16px] text-text-black'
+          className='block max-h-[54px] w-full overflow-hidden font-typewriter text-ellipsis text-[16px] text-text-black'
         >
           {reward?.restriction}
         </Text>

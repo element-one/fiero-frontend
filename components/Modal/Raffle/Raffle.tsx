@@ -152,7 +152,7 @@ const RaffleModal: FC<RaffleModalProps> = ({ onClose }) => {
       size='full'
       isOpen={isModalShown(ModalType.RAFFLE_MODAL)}
       onClose={handleModalClose}
-      className='bg-bg-gray-yellow'
+      className='bg-bg-white'
       classNames={{
         closeButton: 'text-text-black',
       }}
@@ -171,10 +171,10 @@ const RaffleModal: FC<RaffleModalProps> = ({ onClose }) => {
               alt='raffle'
               className='mt-[60px]'
             />
-            <div className='mt-15 text-center text-[30px] font-[600] text-text-black'>
+            <div className='mt-15 text-center text-[30px] font-knockout uppercase font-[600] text-text-black'>
               Enter the Friends of Fiero sweepstakes!
             </div>
-            <div className='mt-[14px] text-center text-[16px] font-[500] text-text-black opacity-60'>
+            <div className='mt-[14px] text-center text-[16px] font-typewriter font-[500] text-text-black opacity-60'>
               Try your luck below!
             </div>
             <div
@@ -218,7 +218,7 @@ const RaffleModal: FC<RaffleModalProps> = ({ onClose }) => {
                 <Link href='/contests' onClick={handleModalClose}>
                   <Text
                     variant='b1'
-                    className='text-center text-text-white underline'
+                    className='text-center text-text-white underline !font-typewriter'
                   >
                     Earn more points
                   </Text>
@@ -226,13 +226,13 @@ const RaffleModal: FC<RaffleModalProps> = ({ onClose }) => {
               </div>
             )}
             {!errorMessage && (
-              <div className='mt-4 text-[14px] font-[500] text-text-black'>
+              <div className='mt-4 text-[14px] font-[500] text-text-black font-typewriter'>
                 Slide to unlock rewards
               </div>
             )}
-            <div className='mt-[113px] text-center text-[12px] text-text-black'>
+            <div className='mt-[113px] text-center text-[12px] text-text-black font-typewriter'>
               <span className='opacity-60'>For Terms and Conditions, </span>
-              <Link href='/tos' target='_blank'>
+              <Link href='/tos' target='_blank' className='underline'>
                 click here
               </Link>
               <span className='opacity-60'>, and for Contest Rules,</span>

@@ -92,7 +92,7 @@ export const RaffleWheel: React.FC<RaffleWheelProps> = ({
           return (
             <div
               key={slot + index}
-              className='absolute left-[98px] top-[17px] h-[114px] w-[60px] origin-bottom text-center text-b3 font-[800]'
+              className='absolute left-[98px] top-[17px] h-[114px] w-[60px] font-typewriter origin-bottom text-center text-b3 font-[800]'
               style={{ transform: `rotate(${index * 45 + 22.5}deg)` }}
             >
               {slot || 'None'}
@@ -103,7 +103,7 @@ export const RaffleWheel: React.FC<RaffleWheelProps> = ({
       <div className='absolute -top-[62px] ml-2 h-[82px] w-[48px] rotate-[8deg] bg-[url(/svg/raffle-wheel-arrow.svg)] bg-contain'></div>
       {errorMessage && (
         <div className='relative z-20 mt-4 p-2'>
-          <span className='text-center text-[14px] text-text-primary opacity-60'>
+          <span className='text-center text-[14px] text-text-primary opacity-60 font-typewriter'>
             {errorMessage}
           </span>
         </div>

@@ -54,10 +54,10 @@ const ImageInput: ForwardRefRenderFunction<
         <>
           <label
             htmlFor='upload-input'
-            className='flex h-[152px] w-[379px] cursor-pointer items-center justify-center gap-2 rounded-lg border border-dashed border-primary-400 bg-bg-gray-yellow'
+            className='flex h-[152px] w-[379px] cursor-pointer items-center justify-center gap-2 rounded-lg border border-dashed border-border-primary bg-bg-white'
           >
             <UploadIcon />
-            <span className='text-h3 text-primary-400'>Upload receipt</span>
+            <span className='text-h3 text-text-primary font-typewriter'>Upload receipt</span>
             <input
               ref={ref}
               onChange={handleChange}
@@ -68,7 +68,7 @@ const ImageInput: ForwardRefRenderFunction<
               className='hidden'
             />
           </label>
-          <span className='mb-2 text-b3 opacity-75'>
+          <span className='mb-2 text-b3 opacity-75 font-typewriter'>
             We accept jpg, png, pdf, gif. Max file size is 5MB.
           </span>
         </>

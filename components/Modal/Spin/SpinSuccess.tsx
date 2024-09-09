@@ -109,7 +109,7 @@ const SpinSuccessModal: FC<SpinSuccessModalProps> = ({ onClose }) => {
                   alt='raffle'
                   className='mt-[60px]'
                 />
-                <div className='text-center text-[30px] font-[800] uppercase text-text-black'>
+                <div className='text-center text-[30px] font-[800] uppercase font-knockout text-text-black'>
                   Congrats! You
                   <br />
                   won [{prizeName}]
@@ -117,7 +117,7 @@ const SpinSuccessModal: FC<SpinSuccessModalProps> = ({ onClose }) => {
 
                 {errorMessage && (
                   <div className='relative z-20 mt-4 p-2 opacity-60'>
-                    <span className='text-center text-[16px] text-text-black'>
+                    <span className='text-center text-[16px] text-text-black font-typewriter'>
                       {errorMessage}
                     </span>
                   </div>
@@ -128,7 +128,7 @@ const SpinSuccessModal: FC<SpinSuccessModalProps> = ({ onClose }) => {
                     <Link href='/contests' onClick={handleModalClose}>
                       <Text
                         variant='b1'
-                        className='text-center text-text-black underline'
+                        className='text-center text-text-black underline font-typewriter'
                       >
                         Earn more points
                       </Text>
@@ -154,7 +154,7 @@ const SpinSuccessModal: FC<SpinSuccessModalProps> = ({ onClose }) => {
                   alt='raffle'
                   className='mt-[60px]'
                 />
-                <div className='text-center text-[30px] font-[800] uppercase text-text-black'>
+                <div className='text-center text-[30px] font-[800] font-knockout uppercase text-text-black'>
                   you didn’t won any prize
                   <br />
                   good luck next time
@@ -168,11 +168,11 @@ const SpinSuccessModal: FC<SpinSuccessModalProps> = ({ onClose }) => {
                 </Button>
               </div>
             )}
-            <div className='mt-[113px] text-center text-[12px] text-text-black'>
+            <div className='mt-[113px] text-center text-[12px] text-text-black font-typewriter'>
               <span className='opacity-60'>
                 For full terms and conditions,{' '}
               </span>
-              <Link href='/tos' target='_blank' className='text-text-orange'>
+              <Link href='/tos' target='_blank' className='text-text-orange underline'>
                 click here
               </Link>
               <span className='opacity-60'>

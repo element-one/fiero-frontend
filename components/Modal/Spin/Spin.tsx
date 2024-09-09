@@ -61,7 +61,7 @@ const SpinModal: FC<SpinModalProps> = ({ onClose }) => {
       size='full'
       isOpen={isModalShown(ModalType.SPIN_MODAL)}
       onClose={handleModalClose}
-      className='bg-bg-gray-yellow'
+      className='bg-bg-white'
       classNames={{
         closeButton: 'text-text-black',
       }}
@@ -80,10 +80,10 @@ const SpinModal: FC<SpinModalProps> = ({ onClose }) => {
               alt='spin'
               className='mt-4'
             />
-            <div className='mt-15 text-center text-[30px] font-[800] uppercase'>
+            <div className='mt-15 text-center font-knockout text-[30px] font-[800] uppercase'>
               Spin the Fiero wheel!
             </div>
-            <div className='mt-[14px] text-center text-[16px] font-[500] opacity-60'>
+            <div className='mt-[14px] text-center text-[16px] font-typewriter font-[500] opacity-60'>
               Try your luck below!
             </div>
             <div className='z-0 flex h-fit shrink-0 items-center justify-center pt-[90px] '>
@@ -95,7 +95,7 @@ const SpinModal: FC<SpinModalProps> = ({ onClose }) => {
             {errorMessage && (
               <div>
                 <div className='relative z-20 mt-2 p-2 text-text-primary opacity-80'>
-                  <span className='text-center text-[16px]'>
+                  <span className='text-center text-[16px] font-typewriter'>
                     {errorMessage}
                   </span>
                 </div>
@@ -103,7 +103,7 @@ const SpinModal: FC<SpinModalProps> = ({ onClose }) => {
                   <Link href='/contests' onClick={handleModalClose}>
                     <Text
                       variant='b1'
-                      className='text-center underline text-text-primary'
+                      className='text-center underline text-text-primary !font-typewriter'
                     >
                       Earn more points
                     </Text>
@@ -112,15 +112,15 @@ const SpinModal: FC<SpinModalProps> = ({ onClose }) => {
               </div>
             )}
             {!errorMessage && (
-              <div className='mt-4 text-[14px] font-[500]'>
+              <div className='mt-4 text-[14px] font-[500] font-typewriter'>
                 Spin to unlock rewards
               </div>
             )}
-            <div className='mt-12 text-center text-[12px]'>
+            <div className='mt-12 text-center text-[12px] font-typewriter'>
               <span className='opacity-60'>
                 For full terms and conditions,{' '}
               </span>
-              <Link href='/tos' target='_blank'>
+              <Link href='/tos' target='_blank' className='underline'>
                 click here
               </Link>
               <span className='opacity-60'>
