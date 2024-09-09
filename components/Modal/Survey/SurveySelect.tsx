@@ -103,7 +103,7 @@ export const SurveySelect: React.FC<SurveySelectProps> = ({
           {`(${index + 1}/${total})`}
         </Text>
         <Text variant='h3' className='text-center text-text-black'>
-          <span className='font-[700]'>{survey?.name}</span>
+          <span className='font-[500] font-knockout text-[29px] uppercase'>{survey?.name}</span>
         </Text>
       </div>
 
@@ -144,7 +144,7 @@ export const SurveySelect: React.FC<SurveySelectProps> = ({
       </div>
       <Button
         onClick={handleNextOrSubmit}
-        className='mt-16 h-[52px] px-6 text-[16px] w-[190px]'
+        className='mt-16 h-[52px] px-6 text-[16px] w-[190px] font-typewriter !font-semibold'
         isLoading={isLoading}
       >
         {index + 1 !== total ? 'Next' : 'Submit'}

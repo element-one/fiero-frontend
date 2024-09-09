@@ -146,10 +146,10 @@ const RedeemPage: NextPage = () => {
 
   return (
     <Layout>
-      <div className='flex min-h-screen h-[100vh] overflow-y-auto w-full flex-col bg-bg-gray-yellow'>
+      <div className='flex min-h-screen h-[100vh] overflow-y-auto w-full flex-col bg-bg-white'>
         <MobileHeading />
 
-        <div className='flex w-full flex-grow px-8 py-8'>
+        <div className='flex w-full flex-grow px-4 md:px-8 py-8'>
           {isLoading && (
             <div className='mt-8 hidden w-full grid-cols-4 gap-4 md:grid'>
               {Array.from(Array(4).keys()).map((item) => {
@@ -168,7 +168,7 @@ const RedeemPage: NextPage = () => {
           {!isLoading && (
             <div className='w-full'>
               <div className='flex w-full flex-row items-center justify-between'>
-                <div className='font-[500]'>Rewards</div>
+                <div className='font-[500] uppercase font-knockout text-[30px]'>Rewards</div>
                 <Tab.Group
                   onChange={handleEarnTabChange}
                   selectedIndex={selectedTab}
@@ -179,7 +179,7 @@ const RedeemPage: NextPage = () => {
                         key={tabName}
                         className={({ selected }) =>
                           clsx(
-                            'w-full rounded-full px-6 py-3 text-[15px] font-[600] leading-5 text-text-primary',
+                            'w-full rounded-full font-typewriter px-6 py-3 text-[15px] font-[600] leading-5 text-text-primary',
                             selected
                               ? 'bg-bg-primary text-text-white'
                               : 'text-text-primary hover:bg-bg-primary hover:text-text-white'

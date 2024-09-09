@@ -139,7 +139,7 @@ export const EarnCard: React.FC<EarnCardProps> = ({
   return (
     <div
       className={clsx(
-        'relative z-0 mb-5 flex cursor-pointer flex-col flex-wrap rounded-[20px] bg-bg-white lg:w-[100%] lg:min-w-[284px]',
+        'relative z-0 mb-5 flex cursor-pointer flex-col flex-wrap rounded-[20px] shadow-md bg-bg-white lg:w-[100%] lg:min-w-[284px]',
         earn?.expiredAt && isPastDate(earn.expiredAt) && 'cursor-not-allowed',
         className
       )}
@@ -191,14 +191,10 @@ export const EarnCard: React.FC<EarnCardProps> = ({
           </div>
         )}
       </button>
-      <div className='absolute bottom-0 left-[10px] mx-auto mb-[-20px] flex w-[calc(100%-20px)] flex-col justify-between rounded-lg bg-bg-white px-6 pb-4 pt-5 shadow-lg'>
-        <div className='absolute -top-4 right-4 flex h-[36px] flex-row items-center rounded-full bg-bg-primary px-[8px]'>
-          <img
-            src={'/png/icon-can.png'}
-            className='h-[24px]'
-            alt='brand cover'
-          />
-          <span className='ml-[8px] pr-2 text-white text-[12px] font-semibold'>
+      <div className='absolute bottom-0 left-[10px] mx-auto mb-[-20px] font-typewriter flex w-[calc(100%-20px)] flex-col justify-between rounded-lg bg-bg-primary px-6 pb-4 pt-5 shadow-lg'>
+        <div className='absolute -top-4 right-4 flex h-[36px] flex-row items-center rounded-full bg-bg-white px-[8px]'>
+          🌶️&nbsp;
+          <span className='ml-[8px] pr-2 text-text-black text-[12px] font-semibold'>
             {earn.points}
           </span>
         </div>
@@ -207,7 +203,7 @@ export const EarnCard: React.FC<EarnCardProps> = ({
           size='semibold'
           className='mt-2 line-clamp-2 flex w-full items-center overflow-hidden text-[17px]'
         >
-          <span className='block max-h-[54px] w-full overflow-hidden text-ellipsis text-[16px] text-text-black'>
+          <span className='block max-h-[54px] w-full overflow-hidden text-ellipsis text-[16px] text-text-white'>
             {earn.name}
           </span>
         </Text>

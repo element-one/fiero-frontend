@@ -45,7 +45,7 @@ export const SurveyContent: React.FC<SurveyContentProps> = ({
       className={clsx(
         'relative flex flex-col items-center overflow-hidden rounded-lg border border-border-white shadow-md hover:border-border-primary',
         isSelected && 'border border-border-primary',
-        !isText && 'md:h-[230px] md:w-[248px]',
+        !isText && 'md:h-[260px] md:w-[248px]',
         isText && 'h-fit w-full'
       )}
     >
@@ -59,7 +59,7 @@ export const SurveyContent: React.FC<SurveyContentProps> = ({
       <Text
         variant={isText ? 'h3' : 'b1'}
         className={clsx(
-          'w-full px-2 py-3 text-left md:text-center',
+          'w-full px-2 py-5 text-left md:text-center font-typewriter font-bold',
           !isText && 'absolute bottom-0 left-0',
           isSelected && 'bg-bg-primary text-text-white',
           !isSelected && 'bg-bg-white text-text-black'

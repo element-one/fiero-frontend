@@ -143,7 +143,7 @@ export const RedeemTokenModal: React.FC<RedeemTokenModalProps> = ({
             >
               <Dialog.Panel
                 className={clsx(
-                  'relative h-full min-h-full w-full transform overflow-hidden overflow-y-auto rounded-xl bg-bg-gray-yellow pb-6 text-left  align-middle shadow-xl transition-all '
+                  'relative h-full min-h-full w-full transform overflow-hidden overflow-y-auto rounded-xl bg-bg-white pb-6 text-left  align-middle shadow-xl transition-all '
                 )}
               >
                 <div className='z-0 flex w-full flex-col items-center justify-center'>
@@ -159,18 +159,18 @@ export const RedeemTokenModal: React.FC<RedeemTokenModalProps> = ({
                       className='max-h-[600px] w-full object-cover'
                       alt='redeem'
                     />
-                    <div className='absolute bottom-0 mb-[-50px] h-[100px] w-[120%] rounded-[50%] bg-bg-gray-yellow md:mb-[-50px] md:h-[200px]'></div>
+                    <div className='absolute bottom-0 mb-[-50px] h-[100px] w-[120%] rounded-[50%] bg-bg-white md:mb-[-50px] md:h-[200px]'></div>
                   </div>
                   <Text
                     variant='h1s'
-                    className='relative z-10 -mt-4 line-clamp-2 w-full max-w-[520px] overflow-ellipsis text-center text-text-black md:-mt-20'
+                    className='relative z-10 -mt-4 line-clamp-2 w-full max-w-[520px] text-[38px] !font-knockout overflow-ellipsis text-center text-text-black md:-mt-20'
                   >
-                    <span className='font-[600]'>{reward?.name}</span>
+                    <span className='font-[600] uppercase'>{reward?.name}</span>
                   </Text>
                   {!errorMessage && (
                     <Text
                       variant='b1'
-                      className='mt-5 w-full z-10 max-w-[520px] px-7 text-center !font-[500] text-text-black !text-[15px]'
+                      className='mt-5 w-full z-10 max-w-[520px] font-typewriter px-7 text-center !font-[500] text-text-black !text-[15px]'
                     >
                       {isRaffle
                         ? 'Every ticket you’ve earned from completing contests will be entered into the next giveaway drawing. Participants will be notified directly of the winner.'
@@ -179,28 +179,24 @@ export const RedeemTokenModal: React.FC<RedeemTokenModalProps> = ({
                   )}
                   {errorMessage && (
                     <div className='relative z-20 mt-4 p-2'>
-                      <span className='text-center text-[16px] text-red-500'>
+                      <span className='text-center text-[16px] text-red-500 font-typewriter'>
                         {errorMessage}
                       </span>
                     </div>
                   )}
-                  <div className='mt-[10px] flex items-center justify-between gap-6 rounded-full bg-bg-light px-4 py-3 md:mt-16'>
+                  <div className='mt-10 flex items-center justify-between gap-6 rounded-[10px] bg-bg-light px-4 py-3 md:mt-16'>
                     <div className='flex items-center justify-center gap-2'>
-                      <img
-                        src='/svg/crown.svg'
-                        className='h-6 w-6'
-                        alt='icon-can'
-                      />
-                      <span className='text-text-black opacity-60'>Cost</span>
+                      🌶️&nbsp;
+                      <span className='text-text-black opacity-60 font-typewriter'>Cost</span>
                     </div>
 
-                    <Text variant='b1' className='text-text-black !font-[600]'>
+                    <Text variant='b1' className='text-text-black !font-[600] font-typewriter'>
                       {`${reward?.points} Points`}
                     </Text>
                   </div>
                   <Button
                     isLoading={isLoading}
-                    className='w-[238px] mt-16 h-[52px] bg-bg-primary px-6 py-5'
+                    className='w-[238px] mt-10 h-[52px] bg-bg-primary px-6 py-5'
                     onClick={handleRedeem}
                     disabled={!!errorMessage}
                   >

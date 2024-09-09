@@ -176,7 +176,7 @@ export const InstagramQuestModal: React.FC<InstagramQuestModalProps> = ({
               leaveFrom='opacity-100 scale-100'
               leaveTo='opacity-0 scale-95'
             >
-              <Dialog.Panel className='relative mt-0 min-h-screen w-full max-w-[1000px] rounded-lg transform overflow-hidden bg-bg-gray-yellow text-left align-middle transition-all md:min-h-fit'>
+              <Dialog.Panel className='relative mt-0 min-h-screen w-full max-w-[1000px] rounded-lg transform overflow-hidden bg-bg-white text-left align-middle transition-all md:min-h-fit'>
                 <div className='z-0 pt-6 md:pt-14'>
                   <button
                     className='absolute right-3 top-4 text-text-black md:right-8'
@@ -209,33 +209,29 @@ export const InstagramQuestModal: React.FC<InstagramQuestModalProps> = ({
                               variant='h4'
                               className='text-center text-text-black'
                             >
-                              <span className='text-[20px] font-[600]'>
+                              <span className='text-[25px] uppercase font-knockout font-[600]'>
                                 {earn?.name}
                               </span>
                             </Text>
                             <LinkText
                               variant='b1'
-                              className='mt-3 w-full max-w-[520px] text-center text-text-black opacity-60'
+                              className='mt-3 w-full font-typewriter text-[14px] max-w-[520px] text-center text-text-black opacity-60'
                             >
                               {earn?.description}
                             </LinkText>
                             <div className='mb-2 mt-8 flex flex-row items-center justify-between rounded-full bg-bg-light px-4 py-3 md:mb-4 md:mt-10'>
                               <div className='flex flex-row items-center'>
-                                <img
-                                  src='/svg/crown.svg'
-                                  className='h-[24px] w-[24px] object-fill'
-                                  alt='rewards'
-                                />
+                                🌶️&nbsp;
                                 <Text
                                   variant='b3'
-                                  className='ml-1 mr-3 text-text-black md:mr-3 opacity-60'
+                                  className='ml-1 mr-3 font-typewriter text-text-black md:mr-3 opacity-60'
                                 >
                                   Rewards
                                 </Text>
                               </div>
                               <Text
                                 variant='b3'
-                                className='mr-1 text-right text-text-black font-semibold'
+                                className='mr-1 text-right font-typewriter text-text-black font-semibold'
                               >
                                 {earn?.points} Points
                               </Text>
@@ -288,26 +284,26 @@ export const InstagramQuestModal: React.FC<InstagramQuestModalProps> = ({
                                     <Text
                                       variant='b1'
                                       size='normal'
-                                      className='text-neutral-300'
+                                      className='text-neutral-300 font-typewriter'
                                     >
                                       Pause for a sip!
                                     </Text>
                                     <p
-                                      className='text-neutral-300 text-xs mt-2 overflow-hidden whitespace-break-spaces px-4 text-center w-screen max-w-[520px]'
+                                      className='text-neutral-300 font-typewriter text-xs mt-2 overflow-hidden whitespace-break-spaces px-4 text-center w-screen max-w-[520px]'
                                     >
                                       {`Pause for a sip! Based on Instagram's guidelines, your follow can take up to 24 hours to verify.`}
                                     </p>
                                   </div>
                                 )}
                                 {!isPending && (
-                                  <div className='text-center text-[14px]'>
+                                  <div className='text-center text-[14px] font-typewriter'>
                                     <span className='text-text-black opacity-70'>
                                       For full posting terms and conditions,
                                     </span>
                                     <Link
                                       href='/tos'
                                       target='_blank'
-                                      className='text-text-primary'
+                                      className='text-text-primary underline'
                                     >
                                       click here.
                                     </Link>

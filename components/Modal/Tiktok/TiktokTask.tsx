@@ -75,7 +75,7 @@ export const TiktokTask: React.FC<TiktokTaskProps> = ({
           <div className='w-8/10 mt-6'>
             <Text
               variant='h23'
-              className='line-clamp-2 flex-grow text-center !font-[600] text-text-black'
+              className='line-clamp-2 flex-grow text-center uppercase !text-[24px] !font-knockout !font-[600] text-text-black'
             >
               {getTitleText}
             </Text>
@@ -87,14 +87,14 @@ export const TiktokTask: React.FC<TiktokTaskProps> = ({
         (isPosted ? (
           isTrue(process.env.NEXT_PUBLIC_TIKTOK_ENABLED) ?
             <button
-              className='mt-4 mb-2 flex items-center justify-center rounded-full bg-bg-primary px-4 w-[190px] h-[52px]'
+              className='mt-4 mb-2 flex items-center justify-center rounded-[10px] bg-bg-primary px-4 w-[190px] h-[52px]'
               onClick={handleClick}
             >
               <Text
                 variant='b1'
                 className='min-w-[180px] text-center text-text-white'
               >
-                <span className='font-[600]'>{getButtonText}</span>
+                <span className='font-[600] font-typewriter'>{getButtonText}</span>
               </Text>
             </button>
             : (
@@ -104,17 +104,17 @@ export const TiktokTask: React.FC<TiktokTaskProps> = ({
                   className='h-[98px] w-[98px] shadow-xl rounded-full'
                   alt='tiktok'
                 />
-                <div className='flex items-center gap-2 mt-4'>
+                <div className='flex items-center gap-2 mt-4 font-typewriter'>
                   <div>Post URL:</div>
                   <input className='border rounded px-2 h-10 w-[280px]' value={postUrl} onChange={(e) => setPostUrl(e.target.value)} />
                 </div>
 
-                {!!errorMessage && <div className='text-text-pink mt-1 text-[14px]'>{errorMessage}</div>}
+                {!!errorMessage && <div className='text-text-pink mt-1 text-[14px] font-typewriter'>{errorMessage}</div>}
 
                 <Button
                   className={
                     clsx(
-                      'my-3 flex w-[190px] items-center justify-center rounded-full bg-bg-primary h-[52px]',
+                      'my-3 flex w-[190px] items-center justify-center rounded-[10px] bg-bg-primary h-[52px]',
                       !postUrl && 'cursor-not-allowed opacity-60'
                     )
                   }
@@ -136,20 +136,20 @@ export const TiktokTask: React.FC<TiktokTaskProps> = ({
             href={getUrlPath}
             target='_blank'
             rel='noopener noreferrer'
-            className='mt-4 mb-2 flex items-center justify-center rounded-full bg-bg-primary px-4 w-[190px] h-[52px]'
+            className='mt-4 mb-2 flex items-center justify-center rounded-[10px] bg-bg-primary px-4 w-[190px] h-[52px]'
             onClick={handleClick}
           >
             <Text
               variant='b1'
               className='min-w-[180px] text-center text-text-white'
             >
-              <span className='font-[600]'>{getButtonText}</span>
+              <span className='font-[600] font-typewriter'>{getButtonText}</span>
             </Text>
           </a>
         ))}
       {isPending && (
         <div className='my-3 flex w-full flex-row items-center justify-center rounded-[8px]  bg-text-disabled bg-opacity-50 px-4 py-[10px] md:w-auto'>
-          <Text variant='b1' className='text-text-secondary'>
+          <Text variant='b1' className='text-text-secondary font-typewriter'>
             Pending
           </Text>
         </div>
@@ -157,7 +157,7 @@ export const TiktokTask: React.FC<TiktokTaskProps> = ({
       {isCompleted && (
         <div className='my-3 flex h-10 w-full flex-row items-center justify-center rounded-[8px] bg-dark-green md:w-28'>
           <img src={'/img/posted.png'} className='h-6' alt='checkbox' />
-          <Text variant='b1' className='ml-2 text-center text-secondary-200'>
+          <Text variant='b1' className='ml-2 text-center text-secondary-200 font-typewriter'>
             {social?.type === 'tiktok_follow' && 'Followed'}
             {social?.type === 'tiktok_post' && 'Posted'}
           </Text>

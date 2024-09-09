@@ -63,7 +63,7 @@ export const LockCard: React.FC<LockCardProps> = ({ title, social, className }) 
           alt='Copy Button'
           className='h-[39px] w-[34px]'
         />
-        <div className='mt-6 text-center text-[17px] max-w-[90vw] md:max-w-[600px] font-semibold leading-7 text-text-black'>
+        <div className='mt-6 text-center text-[17px] max-w-[90vw] font-typewriter md:max-w-[600px] font-semibold leading-7 text-text-black'>
           {title}
         </div>
       </div>

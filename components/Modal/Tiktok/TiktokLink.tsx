@@ -107,7 +107,7 @@ export const TiktokLinkModal: React.FC<TiktokLinkModalProps> = ({
                 </button>
                 <Text
                   variant='h1'
-                  className='mt-16 text-center font-[800] text-text-black'
+                  className='mt-16 text-center font-[800] text-text-black font-typewriter'
                 >
                   Link Your Tiktok Account
                 </Text>
@@ -122,7 +122,7 @@ export const TiktokLinkModal: React.FC<TiktokLinkModalProps> = ({
                     onChange={handleChange}
                     id='username'
                     placeholder={'tiktok username'}
-                    className='flex h-[42px] w-1/2 rounded-lg border border-solid border-border-primary px-[16px] text-text-black md:w-[300px]'
+                    className='flex h-[42px] w-1/2 rounded-lg border border-solid font-typewriter border-border-primary px-[16px] text-text-black md:w-[300px]'
                   ></input>
                   <Button
                     className='w-[200px] text-[16px]'

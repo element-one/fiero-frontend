@@ -38,10 +38,10 @@ export const TiktokConnect: React.FC<TiktokConnectProps> = ({
   return (
     <div {...props}>
       <div>
-        <Text variant='h3' className='text-text-black text-center'>
+        <Text variant='h3' className='text-text-black text-center font-typewriter'>
           Initial step required:
         </Text>
-        <Text variant='b1' className='mt-1 text-text-black text-center'>
+        <Text variant='b1' className='mt-1 text-text-black text-center font-typewriter'>
           Please complete the below to join this challenge.
         </Text>
       </div>
@@ -52,7 +52,7 @@ export const TiktokConnect: React.FC<TiktokConnectProps> = ({
             alt='tiktok icon'
             className='h-[45px] w-[45px]'
           />
-          <Text variant='b1' className='mt-3 text-text-black md:ml-5 md:mt-0 mr-2'>
+          <Text variant='b1' className='mt-3 text-text-black md:ml-5 md:mt-0 mr-2 font-typewriter'>
             Connect your Tiktok Account
           </Text>
         </div>
@@ -62,7 +62,7 @@ export const TiktokConnect: React.FC<TiktokConnectProps> = ({
             className='mt-3 flex h-full w-full flex-row items-center justify-center rounded-[8px] border border-border-primary px-4 py-[10px] md:mt-0 md:w-auto'
             onClick={handleConnect}
           >
-            <Text variant='b1' className='mr-1 text-text-primary'>
+            <Text variant='b1' className='mr-1 text-text-primary font-typewriter'>
               Connect Tiktok
             </Text>
           </button>
@@ -74,7 +74,7 @@ export const TiktokConnect: React.FC<TiktokConnectProps> = ({
             className='flex h-full flex-row items-center justify-center rounded-lg border border-border-primary px-4 py-[10px]'
             onClick={handleRedirect}
           >
-            <Text variant='b1' className='mr-1 text-text-primary'>
+            <Text variant='b1' className='mr-1 text-text-primary font-typewriter'>
               Connect Tiktok
             </Text>
           </a>

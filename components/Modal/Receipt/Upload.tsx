@@ -85,7 +85,7 @@ const Upload: FC<UploadProps> = ({
       leaveFrom='opacity-100 scale-100'
       leaveTo='opacity-0 scale-95'
     >
-      <Dialog.Panel className='h-full min-h-[560px] w-full transform overflow-auto rounded-xl bg-bg-primary text-left align-middle text-white shadow-xl transition-all sm:h-fit md:w-[482px]'>
+      <Dialog.Panel className='h-full min-h-[560px] w-full transform overflow-auto rounded-xl bg-[url(/png/onboarding_bg.png)] bg-center bg-cover text-left align-middle text-white shadow-xl transition-all sm:h-fit md:w-[482px]'>
         {!loading && (
           <div className='flex h-full min-h-[560px] flex-col items-center justify-center gap-7'>
             {reUpload ? (
@@ -107,7 +107,7 @@ const Upload: FC<UploadProps> = ({
                 </p>
               </div>
             ) : (
-              <Text className='mb-8'>Upload your receipt</Text>
+              <Text className='mb-8 font-typewriter'>Upload your receipt</Text>
             )}
 
             <ImageInput

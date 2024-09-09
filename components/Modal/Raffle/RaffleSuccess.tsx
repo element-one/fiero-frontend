@@ -38,10 +38,10 @@ const RaffleSuccessModal: FC<RaffleSuccessModalProps> = ({ onClose }) => {
               alt='raffle'
               className='mt-[60px]'
             />
-            <div className='text-center text-[30px] font-[600] text-text-black'>
+            <div className='text-center text-[30px] font-[600] text-text-black font-knockout'>
               Raffle entered!
             </div>
-            <div className='mt-[16px] text-center text-[16px] font-[500] text-text-black'>
+            <div className='mt-[16px] text-center text-[16px] font-[500] text-text-black font-typewriter'>
               <span className='opacity-60'>
                 We&apos;ll announce winners and notify all participants by email
                 on{' '}
@@ -56,13 +56,13 @@ const RaffleSuccessModal: FC<RaffleSuccessModalProps> = ({ onClose }) => {
             >
               Back to app
             </Button>
-            <div className='mt-[73px] text-center text-[12px] text-text-black'>
+            <div className='mt-[73px] text-center text-[12px] text-text-black font-typewriter'>
               <span className='opacity-60'>For Terms and Conditions, </span>
-              <Link href='/tos' target='_blank' className='text-text-primary'>
+              <Link href='/tos' target='_blank' className='text-text-primary underline'>
                 click here
               </Link>
               <span className='opacity-60'>, and for Contest Rules,</span>
-              <span className='text-text-primary'>click here</span>
+              <span className='text-text-primary underline'>click here</span>
               <span className='opacity-60'>
                 . No purchase or payment of any kind is necessary to enter for a
                 chance to win. A purchase or payment of any kind will not

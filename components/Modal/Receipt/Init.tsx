@@ -48,7 +48,7 @@ const Init: FC<InitProps> = ({ onButtonClick }) => {
         leaveFrom='opacity-100 scale-100'
         leaveTo='opacity-0 scale-95'
       >
-        <Dialog.Panel className='h-full min-h-[740px] w-full transform overflow-hidden rounded-xl px-12  bg-bg-primary text-left align-middle text-white shadow-xl transition-all sm:h-[800px]'>
+        <Dialog.Panel className='h-full min-h-[740px] w-full transform overflow-hidden rounded-xl px-12  bg-[url(/png/onboarding_bg.png)] bg-cover bg-center text-left align-middle text-white shadow-xl transition-all sm:h-[800px]'>
           <div className='flex h-full w-full flex-col items-center justify-center gap-8 pb-10'>
             <Image
               src='/png/receipt_modal_beer.png'
@@ -57,7 +57,7 @@ const Init: FC<InitProps> = ({ onButtonClick }) => {
               height={360}
               className="w-"
             />
-            <Text className='text-center text-[28px]'>
+            <Text className='text-center text-[28px] font-typewriter leading-[31px]'>
               Take a picture of your
               <br />
               receipt to earn
