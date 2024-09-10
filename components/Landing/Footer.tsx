@@ -10,10 +10,10 @@ const LandingFooter = () => {
         src={'/png/fiero_logo.png'}
         alt='fiero logo'
         width={96}
-        className='mt-20 md:mt-32'
+        className='mt-20 md:mt-32 rounded-none'
       />
       <div className='my-6'></div>
-      <div className='flex flex-row space-x-4'>
+      <div className='flex flex-row space-x-4 font-typewriter'>
         <Link href='/privacy' target='_blank' rel='noopener noreferrer'>
           <Text variant='b1' className='my-6 text-text-black underline'>
             Privacy Policy

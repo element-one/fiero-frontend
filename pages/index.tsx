@@ -15,14 +15,14 @@ const HomePage: NextPage = () => {
         <MobileHeading />
 
         <div className='w-full px-8 md:px-4 pb-[60px] pt-6 text-text-white md:pt-[36px]'>
-          <p className='text-left uppercase text-[30px] font-knockout font-medium md:text-center'>
+          <p className='text-left uppercase text-[36px] md:text-[48px] font-knockout font-medium md:text-center'>
             Welcome to
             <br />
             the heat seekers
           </p>
         </div>
 
-        <div className='relative mt-10 md:mt-0 md:mx-[20px] h-[460px] md:h-[670px] shrink-0 w-full md:w-[628px] bg-[url(/png/index-bg.png)] bg-[length:100%_100%] md:bg-cover bg-center bg-no-repeat'>
+        <div className='relative mt-10 md:mt-16 md:mx-[20px] h-[460px] md:h-[670px] shrink-0 w-full md:w-[628px] bg-[url(/png/index-bg.png)] bg-[length:100%_100%] md:bg-cover bg-center bg-no-repeat'>
           <div
             onClick={() => router.push('/contests')}
             className='absolute left-[40px] top-[-66px] md:left-[76px] md:top-[-94px] flex h-[65px] md:h-[92px] w-fit cursor-pointer items-center justify-center rounded-full bg-bg-white text-center uppercase text-text-black'
