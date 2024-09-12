@@ -272,7 +272,7 @@ export const InstagramQuestModal: React.FC<InstagramQuestModalProps> = ({
                                   isPending={isPending}
                                   onComplete={
                                     isPosted
-                                      ? (isTrue(process.env.NEXT_PUBLIC_TIKTOK_ENABLED) ? handleGetPost : handleTaskComplete)
+                                      ? (isTrue(process.env.NEXT_PUBLIC_INSTAGRAM_ENABLED) ? handleGetPost : handleTaskComplete)
                                       : handlePost}
                                   errorMessage={errorMessage}
                                   isLoading={isLoading}
