@@ -85,7 +85,7 @@ export const InstagramTask: React.FC<InstagramTaskProps> = ({
       {!isCompleted &&
         !isPending &&
         (isPosted ? (
-          isTrue(process.env.NEXT_PUBLIC_TIKTOK_ENABLED) ?
+          isTrue(process.env.NEXT_PUBLIC_INSTAGRAM_ENABLED) ?
             <button
               className='mt-4 mb-2 flex items-center justify-center rounded-[10px] bg-bg-primary px-4 w-[190px] h-[52px]'
               onClick={handleClick}
