@@ -24,7 +24,7 @@ export const DeliveryCongratsModal: React.FC<DeliveryCongratsProps> = ({
       onClose={closeModal}
       size='full'
       isOpen={isModalShown(ModalType.DELIVERY_CONGRATS_MODAL)}
-      className='bg-bg-gray-yellow  transition-all]'
+      className='bg-bg-white transition-all]'
       classNames={{
         closeButton: 'text-text-black bg-bg-white',
       }}
@@ -33,13 +33,13 @@ export const DeliveryCongratsModal: React.FC<DeliveryCongratsProps> = ({
         <ModalBody>
           <Confetti className='h-full w-full' />
           <div className='mx-auto flex h-full max-w-[520px] flex-col items-center justify-center py-5'>
-            <div className='mt-[120px] flex flex-col items-center justify-center gap-8'>
+            <div className='mt-[120px] flex font-typewriter flex-col items-center justify-center gap-8'>
               <img
                 src='/svg/check.svg'
                 alt='checked'
                 className='mt-[60px] w-[72px]'
               />
-              <div className='text-center text-[30px] font-[600] uppercase text-text-black'>
+              <div className='text-center text-[30px] font-knockout font-[600] uppercase text-text-black'>
                 Congrats!
               </div>
               <div className='w-full max-w-[520px] text-center text-[16px] text-text-black opacity-90'>

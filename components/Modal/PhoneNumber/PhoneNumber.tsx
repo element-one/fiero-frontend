@@ -104,11 +104,11 @@ export const PhoneNumberModal: React.FC<PhoneNumberModalProps> = ({
               <Dialog.Panel className='flex h-fit w-full max-w-[480px] transform items-center justify-center overflow-hidden rounded-xl border border-border-white bg-bg-white shadow-xl transition-all'>
                 <div className='relative flex w-full flex-col items-center justify-start'>
                   <div className='pt-[56px]'>
-                    <Text variant='h2' size='medium' className='mb-2 font-bold text-text-black'>
+                    <Text variant='h2' size='medium' className='mb-2 !font-knockout font-bold text-text-black'>
                       Can we get your number?
                     </Text>
                   </div>
-                  <div className='mt-8 flex w-full flex-col items-start px-4 text-text-black md:px-20'>
+                  <div className='mt-8 flex w-full flex-col font-typewriter items-start px-4 text-text-black md:px-20'>
                     <span className='text-b2 md:text-b3'>Phone number</span>
                     <div className='mt-2 flex w-full items-center justify-start gap-2 rounded-md border-2 border-neutral-500 px-2 py-1 md:py-2'>
                       <span>+ 1</span>
@@ -129,7 +129,7 @@ export const PhoneNumberModal: React.FC<PhoneNumberModalProps> = ({
                       Save
                     </Button>
                     <div className='mx-16 mt-2'>
-                      <Text variant='b3' className='text-text-black'>
+                      <Text variant='b3' className='text-text-black font-typewriter'>
                         By providing my phone number, I understand that I am
                         consenting to receive autodialed and manual text
                         messages and phone calls from Fiero on my mobile

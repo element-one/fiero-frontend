@@ -74,12 +74,12 @@ export const DeliveryConfirmModal: React.FC<DeliveryConfirmModalProps> = ({
       }}
     >
       <ModalContent>
-        <ModalBody className='overflow-y-auto px-0'>
+        <ModalBody className='overflow-y-auto px-0 font-typewriter'>
           <div className='relative flex w-full flex-col items-center justify-center bg-bg-white pb-10'>
             <Text
               variant='h1s'
               size='semibold'
-              className='mt-5 text-center text-text-black md:mt-[36px]'
+              className='mt-5 text-center font-knockout text-text-black md:mt-[36px]'
             >
               Did you mean?
             </Text>
