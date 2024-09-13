@@ -39,7 +39,7 @@ const ClaimReferralSuccessModal: FC<ClaimReferralSuccessModalProps> = ({
             width={180}
             height={180}
           />
-          <div className='text-center text-[24px] font-bold md:text-[34px] mb-6'>
+          <div className='text-center text-[24px] font-knockout font-bold md:text-[34px] mb-6'>
             Referral rewards claimed
           </div>
           <Button onClick={handleClose} variant='outline'>
