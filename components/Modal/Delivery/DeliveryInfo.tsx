@@ -95,7 +95,7 @@ export const DeliveryInfoModal: React.FC<DeliveryInfoModalProps> = ({
       }}
     >
       <ModalContent>
-        <ModalBody className='overflow-y-auto p-0 bg-bg-gray-yellow'>
+        <ModalBody className='overflow-y-auto p-0 bg-bg-white'>
           <div className='flex w-full transform items-center pb-10'>
             <div className='z-0 flex w-full flex-col items-center'>
               <div className='relative min-h-[200px] w-full overflow-hidden'>
@@ -104,14 +104,14 @@ export const DeliveryInfoModal: React.FC<DeliveryInfoModalProps> = ({
                   className='max-h-[440px] w-full object-fill'
                   alt='shipping address'
                 />
-                <div className='absolute bottom-[-100px] left-[-10%] h-[200px] w-[120%] rounded-[50%] bg-bg-gray-yellow'></div>
+                <div className='absolute bottom-[-100px] left-[-10%] h-[200px] w-[120%] rounded-[50%] bg-bg-white'></div>
               </div>
-              <div className='z-20 -mt-10 text-center text-[30px] font-[800] text-text-black'>
+              <div className='z-20 -mt-10 text-center font-knockout text-[30px] font-[800] text-text-black'>
                 Tell us your shipping address
               </div>
               <form
                 onSubmit={handleSubmit}
-                className='mt-[60px] flex w-full max-w-[364px] flex-col items-center'
+                className='mt-[60px] flex w-full max-w-[364px] flex-col font-typewriter items-center'
               >
                 <div className='flex w-full flex-row justify-between space-x-4'>
                   <div className='flex flex-1 flex-col items-start'>

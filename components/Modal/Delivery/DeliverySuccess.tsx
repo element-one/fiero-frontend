@@ -34,7 +34,7 @@ export const CongratsShippingModal: React.FC<CongratsShippingModalProps> = ({
     >
       <ModalContent>
         <ModalBody className='overflow-y-auto'>
-          <div className='z-0 flex flex-col items-center justify-center p-6'>
+          <div className='z-0 flex flex-col items-center justify-center p-6 font-typewriter'>
             <img
               src='/svg/check.svg'
               className='mt-4 h-[72px] w-[72px] md:mt-10 '
@@ -43,7 +43,7 @@ export const CongratsShippingModal: React.FC<CongratsShippingModalProps> = ({
             <Text
               variant='h12'
               size='semibold'
-              className='mt-5 text-center text-text-black md:mt-[44px]'
+              className='mt-5 text-center font-knockout text-text-black md:mt-[44px]'
             >
               Congrats!
             </Text>
