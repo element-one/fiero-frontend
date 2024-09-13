@@ -75,7 +75,7 @@ export const BonusModal: React.FC<BonusModalProps> = ({ onClose }) => {
                   'relative h-[460px] min-h-full w-[324px] transform overflow-hidden rounded-xl bg-bg-white text-left align-middle shadow-xl transition-all md:h-[580px] md:w-[484px]'
                 )}
               >
-                <div className='z-0 md:mt-[120px] flex flex-col items-center justify-center p-6'>
+                <div className='z-0 md:mt-[120px] font-typewriter flex flex-col items-center justify-center p-6'>
                   <button
                     className='absolute right-2 top-2'
                     onClick={closeModal}
