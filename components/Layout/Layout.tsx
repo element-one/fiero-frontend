@@ -13,15 +13,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <NextSeo
         title='Fiero Rewards'
         description='Earn swag, event tickets, VIP access, and more from Fiero!'
-        canonical='https://harpoonrewardsclub.com'
+        canonical='https://www.fierotequilarewards.com'
         openGraph={{
-          url: 'https://harpoonrewardsclub.com',
+          url: 'https://www.fierotequilarewards.com',
           title: 'Fiero Rewards',
           description:
             'Earn swag, event tickets, VIP access, and more from Fiero!',
           images: [
             {
-              url: 'https://harpoonrewardsclub.com/png/fiero_logo.png',
+              url: 'https://www.fierotequilarewards.com/png/fiero_logo.png',
             },
           ],
           siteName: 'Fiero Rewards',
