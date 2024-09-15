@@ -64,7 +64,7 @@ module.exports = {
         'tab-bg': '#FFFFFF',
         'btn-gray-500': '#3C3C3C',
         'btn-gray-600': '#2E2E2E',
-        'btn-green-700': '#3E4D2A',
+        'btn-green-700': '#739B3B',
         'bg-black': '#000000',
         'modal-bg-dark': '#161616',
 
@@ -106,7 +106,7 @@ module.exports = {
         'text-orange': '#EF6A00',
         'text-light-orange': '#F8A70C',
         'text-inactive': '#EF6A00',
-        'text-green-300': '#A3FF23',
+        'text-green-300': '#F6EADE',
         'text-gray': '#B0B0B0',
         'text-white': '#FFFFFF',
         'text-black': '#000000',

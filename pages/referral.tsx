@@ -92,7 +92,7 @@ const ReferralPage: NextPage = () => {
           </Text>
           <div className=' mx-4 mt-[28px] flex w-fit flex-row items-center justify-between space-x-5 rounded-full border-[1px] border-gray-600 bg-bg-white px-4 py-[14px] md:mx-0 md:w-[373px]'>
             <div className='flex max-w-[280px] text-center text-[16px] font-[600] text-text-black'>
-              <span className='w-full font-typewriter'>{referral}</span>
+              <span className='w-full font-typewriter break-all'>{referral}</span>
             </div>
             <IconButton
               className='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-bg-primary p-2'

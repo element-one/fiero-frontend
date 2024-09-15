@@ -55,7 +55,7 @@ const Init: FC<InitProps> = ({ onButtonClick }) => {
               alt='receipt'
               width={360}
               height={360}
-              className="w-"
+              className="w-[360px] h-[360px] rounded-full shrink-0"
             />
             <Text className='text-center text-[28px] font-typewriter leading-[31px]'>
               Take a picture of your
